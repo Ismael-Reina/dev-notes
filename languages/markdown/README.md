@@ -27,7 +27,7 @@ Su simplicidad y versatilidad lo han convertido en un estándar para la escritur
 
 Se crean con `#`. El número de almohadillas indica el nivel del encabezado (del 1 al 6).
 
-```markdown
+```
 # Encabezado Nivel 1 (H1)
 ## Encabezado Nivel 2 (H2)
 ### Encabezado Nivel 3 (H3)
