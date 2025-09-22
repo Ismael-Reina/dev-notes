@@ -19,7 +19,7 @@ Su simplicidad y versatilidad lo han convertido en un estándar para la escritur
 9.  [Tablas](#9-tablas)
 10. [Listas de Tareas (Github)](#10-listas-de-tareas-github)
 11. [Saltos de Línea](#11-saltos-de-línea)
-12. [Recursos Adicionales](#11-recursos-adicionales)
+12. [Recursos Adicionales](#12-recursos-adicionales)
 
 ---
 
