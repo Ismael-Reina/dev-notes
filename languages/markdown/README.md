@@ -93,7 +93,7 @@ Se crean con números seguidos de un punto.
 
 ## 4 Enlaces
 
-La sintaxis es `[Texto del enlace](URL "Título opcional")`.
+La sintaxis es: `[Texto del enlace](URL "Título opcional")`.
 Los enlaces internos, por referencia o anclas se crean automáticamente a partir de los encabezados: `[Texto del Enlace](URL-del-enlace/#nombre-del-ancla)`.
 
 ```markdown
