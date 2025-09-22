@@ -1,30 +1,30 @@
 # Guía de Referencia Rápida de Markdown
 
-Markdown es un lenguaje de marcado ligero creado por John Gruber con el objetivo de permitir a las personas "escribir usando un formato de texto plano fácil de escribir y fácil de leer, para luego convertirlo a HTML estructuralmente válido".
+Markdown es un lenguaje de marcado ligero creado en 2004 por John Gruber con el objetivo de permitir a las personas "escribir usando un formato de texto plano fácil de escribir y fácil de leer, para luego convertirlo a HTML estructuralmente válido".
 
-[cite_start]Su simplicidad y versatilidad lo han convertido en un estándar para la escritura de documentación, la toma de apuntes y, especialmente, para la creación de archivos `README.md` en plataformas como GitHub[cite: 5, 30].
+Su simplicidad y versatilidad lo han convertido en un estándar para la escritura de documentación, la toma de apuntes y, especialmente, para la creación de archivos `README.md` en plataformas como GitHub.
 
 ---
 
 ## Índice
 
-1.  [Encabezados](#encabezados)
-2.  [Estilos de Texto](#estilos-de-texto)
-3.  [Listas](#listas)
-4.  [Enlaces](#enlaces)
-5.  [Imágenes](#imágenes)
-6.  [Citas](#citas)
-7.  [Código](#código)
-8.  [Líneas Horizontales](#líneas-horizontales)
-9.  [Tablas](#tablas)
-10. [Listas de Tareas](#listas-de-tareas-github)
-11. [Recursos Adicionales](#recursos-adicionales)
+1.  [Encabezados](#1-encabezados)
+2.  [Estilos de Texto](#2-estilos-de-texto)
+3.  [Listas](#3-listas)
+4.  [Enlaces](#4-enlaces)
+5.  [Imágenes](#5-imágenes)
+6.  [Citas](#6-citas)
+7.  [Código](#7-código)
+8.  [Líneas Horizontales](#8-líneas-horizontales)
+9.  [Tablas](#9-tablas)
+10. [Listas de Tareas (Github)](#10-listas-de-tareas-github)
+11. [Recursos Adicionales](#11-recursos-adicionales)
 
 ---
 
 ## 1 Encabezados
 
-Se crean con `#`. El número de almohadillas indica el nivel del encabezado (del 1 al 6).
+Se crean con `#`. El número de almohadillas indica el nivel del encabezado (del 1 al 6). Los espacios en blanco deben ponerse como guiones -.
 
 ```markdown
 # Encabezado Nivel 1 (H1)
@@ -66,9 +66,11 @@ __Este texto también estará en negrita__
 
 ## 3 Listas
 
+Los subelementos se crean con indentación (generalmente 2 o 4 espacios).
+
 ### Listas no Ordenadas
 
-Se crean con *, + o -. Los subelementos se crean con indentación (generalmente 2 o 4 espacios).
+Se crean con *, + o -. 
 
 ```markdown
 * Elemento 1
@@ -117,11 +119,17 @@ Se crean con >.
 > - Gandalf
 ```
 
+El código anterior se vería así:
+
+> Lo único que podemos decidir es qué hacer con el tiempo que se nos ha dado.
+>
+> - Gandalf
+
 ## 7 Código
 
 ### Código en Línea
 
-Se envuelve entre acentos graves `. Para escapar los acentos graves (backticks) deben envolverse en un bloque con un número mayor de acentos.
+Se envuelve entre acentos graves `.
 
 ```markdown
 Para instalar una dependencia en Node.js, usa el comando `npm install nombre-paquete`.
@@ -131,13 +139,15 @@ Para instalar una dependencia en Node.js, usa el comando `npm install nombre-paq
 
 Se envuelven en tres acentos graves ```. Puedes especificar el lenguaje para que se coloree la sintaxis.
 
-``````markdown
+``````javascript
 ```javascript
 function helloWorld() {
   console.log("Wake up, Neo...");
 }
 ```
 ``````
+
+Para escapar los acentos graves (backticks) deben envolverse en un bloque con un número mayor de acentos.
 
 ## 8 Líneas Horizontales
 
@@ -160,6 +170,13 @@ Requieren una línea de encabezado, una línea que separe el encabezado del cont
 | Contenido    | Contenido    | Contenido    |
 ```
 
+La tabla anterior se vería así:
+
+| Encabezado 1 | Encabezado 2 | Encabezado 3 |
+| :----------- | :----------: | -----------: |
+| Alineado a la izquierda | Centrado     | Alineado a la derecha |
+| Contenido    | Contenido    | Contenido    |
+
 *Los dos puntos (:) en la línea separadora definen la alineación de la columna.*
 
 ## 10 Listas de Tareas (Github)
@@ -171,6 +188,9 @@ Una extensión muy popular en GitHub para crear listas de tareas con casillas de
 - [ ] Tarea pendiente
 - [ ] Otra tarea por hacer
 ```
+
+El bloque de código anterior se vería así:
+
 - [x] Tarea completada
 - [ ] Tarea pendiente
 - [ ] Otra tarea por hacer
