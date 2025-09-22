@@ -18,13 +18,14 @@ Su simplicidad y versatilidad lo han convertido en un estándar para la escritur
 8.  [Líneas Horizontales](#8-líneas-horizontales)
 9.  [Tablas](#9-tablas)
 10. [Listas de Tareas (Github)](#10-listas-de-tareas-github)
-11. [Recursos Adicionales](#11-recursos-adicionales)
+11. [Saltos de Línea](#11-saltos-de-línea)
+12. [Recursos Adicionales](#11-recursos-adicionales)
 
 ---
 
 ## 1 Encabezados
 
-Se crean con `#`. El número de almohadillas indica el nivel del encabezado (del 1 al 6). Los espacios en blanco deben ponerse como guiones -.
+Se crean con `#`. El número de almohadillas indica el nivel del encabezado (del 1 al 6).
 
 ```markdown
 # Encabezado Nivel 1 (H1)
@@ -93,11 +94,31 @@ Se crean con números seguidos de un punto.
 
 ## 4 Enlaces
 
-La sintaxis es: `[Texto del enlace](URL "Título opcional")`.
-Los enlaces internos, por referencia o anclas se crean automáticamente a partir de los encabezados: `[Texto del Enlace](URL-del-enlace/#nombre-del-ancla)`.
+### Enlaces en línea
+
+La sintaxis básica, donde el texto visible y la URL se definen en el mismo lugar.
 
 ```markdown
-[Visita Google](https://www.google.com "Ir a Google")
+[Visita Google](https://www.google.com "Título opcional al pasar el ratón")
+```
+
+### Enlaces por referencia
+
+Son útiles para mantener el texto limpio, definiendo las URLs al final del documento.
+
+```markdown
+Este es un [enlace a GitHub][github-ref] y este otro a [Wikipedia][wiki-ref].
+
+[github-ref]: [https://github.com/](https://github.com/)
+[wiki-ref]: [https://www.wikipedia.org/](https://www.wikipedia.org/) "La enciclopedia libre"
+```
+
+### Anclas (enlaces internos)
+
+Sirven para navegar a otras secciones del mismo documento. Se enlaza a un encabezado usando #. El ID del ancla se genera automáticamente a partir del texto del encabezado (en minúsculas y cambiando espacios por guiones -).
+
+```markdown
+[Ir a la sección de Estilos de Texto](#2-estilos-de-texto)
 ```
 
 ## 5 Imágenes
@@ -111,25 +132,23 @@ Similar a los enlaces, pero con una exclamación ! al principio. El texto entre 
 
 ## 6 Citas
 
-Se crean con >.
+Se crean con >. Se pueden anidar usando >>.
 
 ```markdown
-> Lo único que podemos decidir es qué hacer con el tiempo que se nos ha dado.
->
-> - Gandalf
+> "Lo único que podemos decidir es qué hacer con el tiempo que se nos ha dado."
+> > - Gandalf
 ```
 
-El código anterior se vería así:
+El bloque de código anterior se renderizaría así:
 
-> Lo único que podemos decidir es qué hacer con el tiempo que se nos ha dado.
->
-> - Gandalf
+> "Lo único que podemos decidir es qué hacer con el tiempo que se nos ha dado."
+> > - Gandalf
 
 ## 7 Código
 
 ### Código en Línea
 
-Se envuelve entre acentos graves `.
+Se envuelve entre acentos graves ` y se usa para resaltar pequeños fragmentos de código, comandos o nombres de teclas.
 
 ```markdown
 Para instalar una dependencia en Node.js, usa el comando `npm install nombre-paquete`.
@@ -151,7 +170,7 @@ Para escapar los acentos graves (backticks) deben envolverse en un bloque con un
 
 ## 8 Líneas Horizontales
 
-Para crear un separador temático, usa tres o más guiones, asteriscos o guiones bajos.
+Para crear un separador temático, se usan tres o más guiones, asteriscos o guiones bajos en una línea. No hay ninguna diferencia funcional entre ellos.
 
 ```markdown
 ---
@@ -161,7 +180,7 @@ ___
 
 ## 9 Tablas
 
-Requieren una línea de encabezado, una línea que separe el encabezado del contenido y las filas de datos.
+Requieren una línea de encabezado, una línea que separe el encabezado del contenido y las filas de datos.   Las celdas se separan con |.  Los dos puntos (:) en la línea separadora definen la alineación del texto en esa columna.
 
 ```markdown
 | Encabezado 1 | Encabezado 2 | Encabezado 3 |
@@ -170,18 +189,16 @@ Requieren una línea de encabezado, una línea que separe el encabezado del cont
 | Contenido    | Contenido    | Contenido    |
 ```
 
-La tabla anterior se vería así:
+La tabla anterior se renderizaría así:
 
 | Encabezado 1 | Encabezado 2 | Encabezado 3 |
 | :----------- | :----------: | -----------: |
 | Alineado a la izquierda | Centrado     | Alineado a la derecha |
 | Contenido    | Contenido    | Contenido    |
-
-*Los dos puntos (:) en la línea separadora definen la alineación de la columna.*
 
 ## 10 Listas de Tareas (Github)
 
-Una extensión muy popular en GitHub para crear listas de tareas con casillas de verificación.
+Forman parte de GitHub Flavored Markdown (GFM). Puede que no funcionen en todos los editores.
 
 ```markdown
 - [x] Tarea completada
@@ -189,13 +206,38 @@ Una extensión muy popular en GitHub para crear listas de tareas con casillas de
 - [ ] Otra tarea por hacer
 ```
 
-El bloque de código anterior se vería así:
+El bloque de código anterior se renderizaría así:
 
 - [x] Tarea completada
 - [ ] Tarea pendiente
 - [ ] Otra tarea por hacer
 
-## 11 Recursos Adicionales
+## 11 Saltos de Línea
+
+Por defecto, Markdown ignora los saltos de línea simples. Para que el texto fluya, une las líneas consecutivas en un solo párrafo. Para controlar los saltos, tienes dos opciones:
+
+### Párrafos nuevos
+
+Para empezar un párrafo nuevo, simplemente deja una **línea completamente en blanco** entre los textos.
+
+* **Ejemplo:**
+    ```markdown
+    Línea del primer párrafo.
+
+    Línea del segundo párrafo.
+    ```
+
+### Saltos de línea simples
+
+Si solo quieres que el texto baje a la línea siguiente sin crear un párrafo nuevo (un salto `<br>`), añade **dos espacios en blanco** al final de la línea.
+
+* **Ejemplo:**
+    ```markdown
+    Esta es la primera línea.[espacio][espacio]
+    Y esta es la segunda, justo debajo.
+    ```
+    
+## 12 Recursos Adicionales
 
 ### Tutoriales Interactivos y Guías
 
