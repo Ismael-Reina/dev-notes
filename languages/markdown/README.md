@@ -200,7 +200,7 @@ La tabla anterior se renderizaría así:
 
 Forman parte de GitHub Flavored Markdown (GFM). Puede que no funcionen en todos los editores.
 
-```markdown
+```
 - [x] Tarea completada
 - [ ] Tarea pendiente
 - [ ] Otra tarea por hacer
@@ -232,7 +232,7 @@ Para empezar un párrafo nuevo, simplemente deja una **línea completamente en b
 Si solo quieres que el texto baje a la línea siguiente sin crear un párrafo nuevo (un salto `<br>`), añade **dos espacios en blanco** al final de la línea.
 
 * **Ejemplo:**
-    ```markdown
+    ```
     Esta es la primera línea.[espacio][espacio]
     Y esta es la segunda, justo debajo.
     ```
