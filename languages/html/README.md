@@ -1,6 +1,6 @@
 # **Guía de Referencia Rápida de HTML**
 
-HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructurar el contenido de las páginas web. Define el significado y la estructura del contenido mediante un sistema de "etiquetas" que el navegador interpreta para mostrar los elementos visuales.
+HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructurar el contenido de las páginas web. Creado por Tim Berners-Lee en 1991, define el significado y la estructura del contenido mediante un sistema de "etiquetas" que el navegador interpreta para mostrar los elementos visuales.
 
 ## **Índice**
 
@@ -10,10 +10,12 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructur
 4. [Enlaces e Imágenes](#4-enlaces-e-imágenes)
 5. [Listas](#5-listas)
 6. [Contenido Multimedia](#6-contenido-multimedia)
-7. [HTML Semántico](#7-html-semántico)
-8. [Formularios](#8-formularios)
-9. [Otros Elementos Útiles](#9-otros-elementos-útiles)
-10. [Recursos Adicionales](#10-recursos-adicionales)
+7. [Etiquetas de Agrupamiento](#7-etiquetas-de-agrupamiento)
+8. [HTML Semántico](#8-html-semántico)
+9. [Formularios](#9-formularios)
+10. [Otros Elementos Útiles](#10-otros-elementos-útiles)
+11. [Notas Importantes](#11-notas-importantes)
+12. [Recursos Adicionales](#12-recursos-adicionales)
 
 ## **1. Conceptos Fundamentales**
 
@@ -32,6 +34,14 @@ Un **elemento** es la unidad básica de HTML y generalmente consta de una etique
 
 Los atributos proporcionan información adicional sobre un elemento y se especifican en la etiqueta de apertura.
 
+```html
+<a href="https://www.ejemplo.com" target="_blank" title="Ir a Ejemplo">Visitar Ejemplo</a>
+```
+
+El valor asignado a un atributo debe ir entre **comillas dobles o simples**.
+En HTML5 pueden omitirse si el valor no contiene espacios, pero la buena práctica es usarlas siempre para evitar errores.
+
+Los atributos pueden clasificarse en:  
 - **Globales**: Se pueden usar en cualquier etiqueta (ej: `id`, `class`, `title`, `hidden`).
 - **Específicos**: Solo aplican a ciertos elementos (ej: `href` en `<a>` o `src` en `<img>`).
 - **Booleanos**: Su presencia implica un valor `true`. No necesitan un valor asignado (ej: `controls`, `autoplay`, `required`).
@@ -44,11 +54,12 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Título de la Página</title> <!-- Título en la pestaña y buscadores -->
+    <link rel="icon" href="/img/favicon.ico"> <!-- Favicon de la página -->
+
     <meta charset="UTF-8"> <!-- Codificación de caracteres universal -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable -->
     <meta name="description" content="Descripción de la página para SEO"> <!-- Descripción para buscadores -->
-    <title>Título de la Página</title> <!-- Título en la pestaña y buscadores -->
-    <link rel="icon" href="/img/favicon.ico"> <!-- Favicon de la página -->
 </head>
 <body>
     <header>
@@ -68,9 +79,14 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 
 | Etiqueta | Descripción |
 | :---- | :---- |
+| `<meta charset="UTF-8">` | Define la codificación de caracteres universal (UTF-8). |
+| `<meta name="viewport" content="width=device-width, initial-scale=1.0">` | Permite diseño adaptable en dispositivos móviles. |
+| `<meta name="description" content="Descripción del sitio web">` | Breve descripción del sitio para buscadores y SEO. |
 | `<meta name="robots" content="index, follow">` | Indica a los buscadores que indexen y sigan los enlaces de la página. |
 | `<meta name="theme-color" content="#09f">` | Define un color para la barra de herramientas del navegador en móviles. |
+| `<link rel="icon" type="image/jpg" href="/img/hydralisk.jpg">` | Especifica el favicon de la página. |
 | `<link rel="canonical" href="URL">` | Especifica la URL preferida de una página para evitar contenido duplicado. |
+| `<link rel="alternate" href="https://hydra.dev/en" hreflang="en-GB">` | Señala la versión en otro idioma del sitio. |
 
 ### **Open Graph (Para Redes Sociales)**
 
@@ -80,6 +96,7 @@ Protocolo para controlar cómo se muestra una vista previa de tu página cuando 
 <meta property="og:title" content="Título para compartir">
 <meta property="og:description" content="Descripción para compartir">
 <meta property="og:image" content="URL_de_la_imagen_preview.jpg">
+<meta property="og:image:alt" content="Descripción de la imagen para accesibilidad">
 ```
 
 Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https://www.opengraph.xyz/).
@@ -91,7 +108,6 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 - `<strong>`: Indica importancia fuerte en el texto (negrita por defecto).  
 - `<em>`: Aplica énfasis al texto (cursiva por defecto).  
 - `<small>`: Para contenido secundario o de menor importancia.  
-- `<span>`: Contenedor genérico en línea.  
 - `<blockquote>`: Para citas largas o bloques de texto citados.  
 - `<br>`: Salto de línea simple.  
 - `<hr>`: Línea horizontal o separador temático.  
@@ -152,8 +168,9 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 <video src="/videos/mi-video.mp4" controls muted autoplay loop poster="/img/preview.jpg"></video>
 ```
 
-- `controls`: Muestra controles de reproducción.  
-- `autoplay`: Requiere `muted` en la mayoría de navegadores.  
+- `controls`: Muestra controles de reproducción.
+- `muted`: Silencia el audio por defecto. Es necesario para que `autoplay` funcione en la mayoría de navegadores.  
+- `autoplay`: Intenta reproducir el vídeo automáticamente.  
 - `loop`: Repite el vídeo en bucle.  
 - `poster`: Imagen previa mientras carga el vídeo.  
 
