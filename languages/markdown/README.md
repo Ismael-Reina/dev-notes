@@ -168,6 +168,21 @@ function helloWorld() {
 
 Para escapar los acentos graves (backticks) deben envolverse en un bloque con un número mayor de acentos.
 
+#### Lenguajes comunes para resaltar sintaxis
+
+- `html` → HTML  
+- `css` → CSS  
+- `javascript` / `js` → JavaScript  
+- `typescript` / `ts` → TypeScript  
+- `python` → Python  
+- `java` → Java  
+- `c`, `cpp`, `csharp` → C, C++, C#  
+- `php` → PHP  
+- `sql` → SQL  
+- `bash` / `shell` → Shell scripts  
+- `json`, `yaml` → JSON, YAML  
+- `diff` → Diferencias en código  
+
 ## 8 Líneas Horizontales
 
 Para crear un separador temático, se usan tres o más guiones, asteriscos o guiones bajos en una línea. No hay ninguna diferencia funcional entre ellos.
