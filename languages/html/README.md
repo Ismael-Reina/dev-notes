@@ -178,22 +178,26 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 
 Funciona de manera similar a `<video>`, con atributos como `controls`, `autoplay`, `loop`.  
 
-## **7. HTML Semántico**
+## **7. Etiquetas de Agrupamiento**
+
+- `<div>`: Contenedor genérico de **bloque**. Se usa para agrupar elementos y aplicarles estilos con CSS o manipularlos con JavaScript. No tiene valor semántico.
+- `<span>`: Contenedor genérico **en línea**. Se usa para agrupar una parte de un texto o de un elemento en línea, generalmente para aplicarle un estilo específico.
+
+## **8. HTML Semántico**
 
 Usar etiquetas semánticas ayuda a los navegadores y buscadores a entender la estructura del contenido.
 
-- `<header>`: Cabecera.  
-- `<footer>`: Pie de página.  
-- `<main>`: Contenido principal.  
-- `<nav>`: Navegación.  
-- `<section>`: Sección temática.  
-- `<article>`: Contenido autocontenido.  
-- `<aside>`: Contenido complementario.  
-- `<div>`: Contenedor genérico.  
+- `<header>`: Cabecera de una página o sección.  
+- `<footer>`: Pie de página de una página o sección.  
+- `<main>`: Contenido principal y único de la página.  
+- `<nav>`: Para menús de navegación principal.  
+- `<section>`: Agrupa contenido temáticamente relacionado.  
+- `<article>`: Para contenido independiente y autocontenido (un post de blog, una noticia).  
+- `<aside>`: Contenido complementario o tangencialmente relacionado (una barra lateral).  
 
 ### **Atributo `role`**
 
-Refuerza o define la semántica de un elemento para accesibilidad.
+Sirve para dar un significado semántico explícito a elementos que no lo tienen, o para redefinir el de un elemento existente. Es una herramienta clave para la **accesibilidad**.
 
 ```html
 <div role="search">
@@ -201,7 +205,12 @@ Refuerza o define la semántica de un elemento para accesibilidad.
 </div>
 ```
 
-## **8. Formularios**
+- **¿Cuándo usarlo?** Úsalo cuando no exista una etiqueta HTML nativa que describa la función de tu elemento. La primera regla de ARIA es: si puedes usar un elemento nativo (`<button>`, `<nav>`), úsalo.
+- **¿Con qué etiquetas?** Principalmente con etiquetas genéricas como `<div>` y `<span>` para convertirlas en componentes accesibles (ej: un `<div>` que actúa como un botón o una alerta).
+- **Roles comunes**: `presentation` (elimina la semántica), `button`, `search`, `navigation`, `main`, `banner`, `dialog`, `alert`.
+- **Recomendación**: Usa `role` con moderación y solo cuando sea necesario. Un mal uso puede empeorar la accesibilidad. [Aquí puedes consultar la lista completa de roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
+
+## **9. Formularios**
 
 ### **Estructura**
 
@@ -217,22 +226,64 @@ Refuerza o define la semántica de un elemento para accesibilidad.
 </form>
 ```
 
-- `<form>`: Contenedor principal.  
+- `<form>`: Contenedor principal del formulario.  
 - `<fieldset>`: Agrupa campos relacionados.  
-- `<legend>`: Título de un `<fieldset>`.  
-- `<label>`: Texto asociado a un campo.  
-- `<input>`: Campo de entrada.  
-- `<textarea>`: Texto multilínea.  
+- `<legend>`: Título para un `<fieldset>`.  
+- `<label>`:  Etiqueta descriptiva para un campo. El atributo `for` lo asocia con el id del `input`.  
+- `<input>`:  El campo de entrada de datos. El atributo `type` define su comportamiento (`text`, `email`, `password`, `checkbox`, `file`, etc.).  
+- `<textarea>`: Campo de texto multilínea.  
 - `<select>` y `<option>`: Lista desplegable.  
-- `<button>`: Botón de acción.  
+- `<button>`: Botón para enviar el formulario o realizar acciones con JavaScript.  
 
-## **9. Otros Elementos Útiles**
+### **Autocompletado con `<datalist>`**
 
-- `<iframe>`: Incrusta otra página web.  
-- `<dialog>`: Ventanas modales nativas.  
-- `<details>` y `<summary>`: Contenido desplegable.  
+Puedes proporcionar una lista de sugerencias a un campo de texto.  
+```html
+<label for="lenguaje">Elige un lenguaje:</label>
+<input list="lenguajes" id="lenguaje" name="lenguaje">
+<datalist id="lenguajes">
+  <option value="JavaScript">
+  <option value="Python">
+  <option value="Java">
+</datalist>
+```
 
-## **10. Recursos Adicionales**
+## **10. Otros Elementos Útiles**
+
+- `<iframe>`: Incrusta otra página web dentro de la actual.  
+- `<dialog>`: Permite crear ventanas modales o pop-ups nativos. Tiene un buen soporte en navegadores modernos.  
+- `<details>` y `<summary>`: Crean un widget de contenido desplegable (acordeón). Son nativamente accesibles.  
+- `<figure>` y `<figcaption>`: La forma semántica correcta de agrupar una imagen, diagrama o bloque de código con su pie de foto o leyenda.
+```html
+<figure>
+  <img src="/img/mi-foto.jpg" alt="Descripción de la foto">
+  <figcaption>Este es el pie de foto de la imagen.</figcaption>
+</figure>
+```
+
+## **11. Notas importantes**
+
+### **User-Agent Stylesheet**
+
+Cada navegador aplica un conjunto de estilos por defecto a los elementos HTML para que tengan una apariencia básica sin necesidad de CSS. Por ejemplo, los `<h1>` son grandes y en negrita, y los enlaces `<a>` son azules y subrayados. A este conjunto de reglas se le llama **User-Agent Stylesheet**.
+
+Puedes inspeccionar estos estilos con las herramientas de desarrollador de tu navegador. Es el motivo por el cual a menudo se usan "resets" o "normalizadores" de CSS al inicio de un proyecto, para anular estas reglas y asegurar una apariencia consistente en todos los navegadores.
+
+### **Casos de Uso Prácticos**
+
+#### **Crear un enlace de WhatsApp**
+
+Puedes crear un enlace que abra una conversación de WhatsApp con un número y un mensaje predefinido.
+
+```html
+<!-- Enlace simple -->
+<a href="[https://wa.me/34600123456](https://wa.me/34600123456)">Enviar mensaje a este número</a>
+
+<!-- Enlace con mensaje predefinido -->
+<a href="[https://wa.me/34600123456?text=Hola,%20quiero%20más%20información](https://wa.me/34600123456?text=Hola,%20quiero%20más%20información).">Contactar por WhatsApp</a>
+```
+
+## **12. Recursos Adicionales**
 
 - **Documentación de Referencia (Imprescindible):**  
   - [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML)  
