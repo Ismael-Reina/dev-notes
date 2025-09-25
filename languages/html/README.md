@@ -55,11 +55,7 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 <html lang="es">
 <head>
     <title>Título de la Página</title> <!-- Título en la pestaña y buscadores -->
-    <link rel="icon" href="/img/favicon.ico"> <!-- Favicon de la página -->
-
-    <meta charset="UTF-8"> <!-- Codificación de caracteres universal -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable -->
-    <meta name="description" content="Descripción de la página para SEO"> <!-- Descripción para buscadores -->
+    <!-- Aquí van las etiquetas meta -->
 </head>
 <body>
     <header>
@@ -84,7 +80,7 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 | `<meta name="description" content="Descripción del sitio web">` | Breve descripción del sitio para buscadores y SEO. |
 | `<meta name="robots" content="index, follow">` | Indica a los buscadores que indexen y sigan los enlaces de la página. |
 | `<meta name="theme-color" content="#09f">` | Define un color para la barra de herramientas del navegador en móviles. |
-| `<link rel="icon" type="image/jpg" href="/img/hydralisk.jpg">` | Especifica el favicon de la página. |
+| `<link rel="icon" href="/img/favicon.ico">` | Especifica el favicon de la página. |
 | `<link rel="canonical" href="URL">` | Especifica la URL preferida de una página para evitar contenido duplicado. |
 | `<link rel="alternate" href="https://hydra.dev/en" hreflang="en-GB">` | Señala la versión en otro idioma del sitio. |
 
@@ -277,10 +273,10 @@ Puedes crear un enlace que abra una conversación de WhatsApp con un número y u
 
 ```html
 <!-- Enlace simple -->
-<a href="[https://wa.me/34600123456](https://wa.me/34600123456)">Enviar mensaje a este número</a>
+<a href="https://wa.me/34600123456">Enviar mensaje a este número</a>
 
 <!-- Enlace con mensaje predefinido -->
-<a href="[https://wa.me/34600123456?text=Hola,%20quiero%20más%20información](https://wa.me/34600123456?text=Hola,%20quiero%20más%20información).">Contactar por WhatsApp</a>
+<a href="https://wa.me/34600123456?text=Hola,%20quiero%20más%20información">Contactar por WhatsApp</a>
 ```
 
 ## **12. Recursos Adicionales**
