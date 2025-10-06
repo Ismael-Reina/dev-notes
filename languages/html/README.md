@@ -1,8 +1,8 @@
-# **Guía de Referencia Rápida de HTML**
+# Guía de Referencia Rápida de HTML
 
 HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructurar el contenido de las páginas web. Creado por Tim Berners-Lee en 1991, define el significado y la estructura del contenido mediante un sistema de "etiquetas" que el navegador interpreta para mostrar los elementos visuales.
 
-## **Índice**
+## Índice
 
 1. [Conceptos Fundamentales](#1-conceptos-fundamentales)
 2. [Estructura Básica de un Documento](#2-estructura-básica-de-un-documento)
@@ -18,9 +18,9 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructur
 12. [Notas Importantes](#12-notas-importantes)
 13. [Recursos Adicionales](#13-recursos-adicionales)
 
-## **1. Conceptos Fundamentales**
+## 1. Conceptos Fundamentales
 
-### **Elementos y Etiquetas**
+### Elementos y Etiquetas
 
 Un **elemento** es la unidad básica de HTML y generalmente consta de una etiqueta de apertura, contenido y una etiqueta de cierre. La **etiqueta** es la parte que va entre `<` y `>`.
 
@@ -31,7 +31,7 @@ Un **elemento** es la unidad básica de HTML y generalmente consta de una etique
 - **Elementos Vacíos**: No tienen etiqueta de cierre ni contenido, como `<img>`, `<br>` o `<hr>`.
 - **Elementos Reemplazables**: Su contenido es reemplazado por un objeto externo, como `<img>` o `<video>`.
 
-### **Atributos**
+### Atributos
 
 Los atributos proporcionan información adicional sobre un elemento y se especifican en la etiqueta de apertura.
 
@@ -47,7 +47,7 @@ Los atributos pueden clasificarse en:
 - **Específicos**: Solo aplican a ciertos elementos (ej: `href` en `<a>` o `src` en `<img>`).
 - **Booleanos**: Su presencia implica un valor `true`. No necesitan un valor asignado (ej: `controls`, `autoplay`, `required`).
 
-### **Comentarios**
+### Comentarios
 
 Los comentarios permiten dejar notas en el código que no serán visibles en la página.
 
@@ -57,7 +57,7 @@ Los comentarios permiten dejar notas en el código que no serán visibles en la 
 <!-- <p>Este párrafo está comentado y no se verá.</p> -->
 ```
 
-## **2. Estructura Básica de un Documento**
+## 2. Estructura Básica de un Documento
 
 Todo documento HTML sigue una estructura estándar. La sección `<head>` contiene metadatos y enlaces a recursos, mientras que el `<body>` contiene el contenido visible de la página.
 
@@ -82,7 +82,7 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 </html>
 ```
 
-### **Etiquetas `<meta>` importantes**
+### Etiquetas `<meta>` importantes
 
 | Etiqueta | Descripción |
 | :---- | :---- |
@@ -95,7 +95,7 @@ Todo documento HTML sigue una estructura estándar. La sección `<head>` contien
 | `<link rel="canonical" href="URL">` | Especifica la URL preferida de una página para evitar contenido duplicado. |
 | `<link rel="alternate" href="https://hydra.dev/en" hreflang="en-GB">` | Señala la versión en otro idioma del sitio. |
 
-### **Open Graph (Para Redes Sociales)**
+### Open Graph (Para Redes Sociales)
 
 Protocolo para controlar cómo se muestra una vista previa de tu página cuando se comparte en redes sociales.
 
@@ -108,7 +108,7 @@ Protocolo para controlar cómo se muestra una vista previa de tu página cuando 
 
 Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https://www.opengraph.xyz/).
 
-## **3. Etiquetas de Texto Comunes**
+## 3. Etiquetas de Texto Comunes
 
 - `<h1>` a `<h6>`: Encabezados, del más al menos importante.  
 - `<p>`: Párrafo.  
@@ -119,9 +119,9 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 - `<br>`: Salto de línea simple.  
 - `<hr>`: Línea horizontal o separador temático.  
 
-## **4. Enlaces e Imágenes**
+## 4. Enlaces e Imágenes
 
-### **Enlaces `<a>`**
+### Enlaces `<a>`
 
 ```html
 <a href="https://www.ejemplo.com" target="_blank" rel="noreferrer">Visita Ejemplo.com</a>
@@ -141,7 +141,7 @@ En la práctica, `target="_blank"`, `rel="noopener"` y `rel="noreferrer"` se sue
 
 Los navegadores modernos ya aplican noopener por defecto a los enlaces target="_blank", pero que incluirlo sigue siendo una buena práctica para dar soporte a navegadores antiguos.
 
-#### **Enviar un correo electrónico**
+#### Enviar un correo electrónico
 
 Puedes crear un enlace que abra el cliente de correo predeterminado del usuario con el campo “Para” (y opcionalmente “Asunto” o “Mensaje”) rellenado.
 
@@ -151,7 +151,7 @@ Puedes crear un enlace que abra el cliente de correo predeterminado del usuario 
 </a>
 ```
 
-#### **Crear un enlace de WhatsApp**
+#### Crear un enlace de WhatsApp
 
 Puedes crear un enlace que abra una conversación de WhatsApp con un número y un mensaje predefinido.
 
@@ -163,7 +163,7 @@ Puedes crear un enlace que abra una conversación de WhatsApp con un número y u
 <a href="https://wa.me/34600123456?text=Hola,%20quiero%20más%20información">Contactar por WhatsApp</a>
 ```
 
-### **Imágenes `<img>`**
+### Imágenes `<img>`
 
 ```html
 <img src="/img/mi-foto.jpg" alt="Descripción de la foto" title="Texto al pasar el ratón" loading="lazy">
@@ -174,9 +174,9 @@ Puedes crear un enlace que abra una conversación de WhatsApp con un número y u
 - `title`: Información adicional que aparece al pasar el cursor.  
 - `loading="lazy"`: Carga diferida para mejorar rendimiento.  
 
-## **5. Listas**
+## 5. Listas
 
-### **Listas Ordenadas `<ol>`**
+### Listas Ordenadas `<ol>`
 
 ```html
 <ol start="5" reversed>
@@ -189,7 +189,7 @@ Puedes crear un enlace que abra una conversación de WhatsApp con un número y u
 - `reversed`: Numera la lista en orden descendente.  
 - `value` (en `<li>`): Fuerza un valor específico para un elemento.  
 
-### **Listas No Ordenadas `<ul>`**
+### Listas No Ordenadas `<ul>`
 
 ```html
 <ul>
@@ -246,7 +246,7 @@ Por ejemplo:
 
 ## 7. Contenido Multimedia
 
-### **Vídeo `<video>`**
+### Vídeo `<video>`
 
 El formato recomendado es MP4 (H.264).
 
@@ -260,7 +260,7 @@ El formato recomendado es MP4 (H.264).
 - `loop`: Repite el vídeo en bucle.  
 - `poster`: Imagen previa mientras carga el vídeo.  
 
-### **Audio `<audio>`**
+### Audio `<audio>`
 
 Funciona de manera similar a `<video>`, con atributos como `controls`, `autoplay`, `loop`. El formato recomendado es MP3.  
 
@@ -281,7 +281,7 @@ Usar etiquetas semánticas ayuda a los navegadores y buscadores a entender la es
 - `<article>`: Para contenido independiente y autocontenido (un post de blog, una noticia).  
 - `<aside>`: Contenido complementario o tangencialmente relacionado (una barra lateral).  
 
-### **Atributo `role`**
+### Atributo `role`
 
 Sirve para dar un significado semántico explícito a elementos que no lo tienen, o para redefinir el de un elemento existente. Es una herramienta clave para la **accesibilidad**.
 
@@ -298,7 +298,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 
 ## 10. Formularios
 
-### **Estructura**
+### Estructura
 
 ```html
 <form action="/procesar-datos" method="post">
@@ -323,7 +323,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 | `<select>` y `<option>` | Lista desplegable. |
 | `<button>` | Botón para enviar el formulario o realizar acciones con JavaScript. |
 
-### **Tipos de entrada comunes**
+### Tipos de entrada comunes
 | Tipo | Descripción |
 | :---- | :---- |
 | `text` | Campo de texto de una línea. |
@@ -338,7 +338,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 | `radio` | Botón de selección única. |
 | `hidden` | Campo oculto que no se muestra al usuario. |
 
-### **Atributos útiles**
+### Atributos útiles
 | Atributo | Descripción |
 | :---- | :---- |
 | `placeholder` | Texto guía dentro del campo. |
@@ -350,7 +350,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 | `multiple` | Permite seleccionar varios archivos u opciones. |
 | `autofocus` | Coloca el foco automáticamente al cargar el formulario. |
 
-### **Autocompletado con `<datalist>`**
+### Autocompletado con `<datalist>`
 
 Puedes proporcionar una lista de sugerencias a un campo de texto.  
 ```html
@@ -378,7 +378,7 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 
 ## 12. Notas Importantes
 
-### **User-Agent Stylesheet**
+### User-Agent Stylesheet
 
 Cada navegador aplica un conjunto de estilos por defecto a los elementos HTML para que tengan una apariencia básica sin necesidad de CSS. Por ejemplo, los `<h1>` son grandes y en negrita, y los enlaces `<a>` son azules y subrayados. A este conjunto de reglas se le llama **User-Agent Stylesheet**.
 
