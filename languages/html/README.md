@@ -139,6 +139,8 @@ En la práctica, `target="_blank"`, `rel="noopener"` y `rel="noreferrer"` se sue
 <a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Abrir enlace seguro</a>
 ```
 
+Los navegadores modernos ya aplican noopener por defecto a los enlaces target="_blank", pero que incluirlo sigue siendo una buena práctica para dar soporte a navegadores antiguos.
+
 #### **Enviar un correo electrónico**
 
 Puedes crear un enlace que abra el cliente de correo predeterminado del usuario con el campo “Para” (y opcionalmente “Asunto” o “Mensaje”) rellenado.
@@ -196,13 +198,14 @@ Puedes crear un enlace que abra una conversación de WhatsApp con un número y u
 </ul>
 ```
 
-## **6. Tablas**
+## 6. Tablas
 
 Las tablas permiten organizar información en filas y columnas.
 
 | Etiqueta | Descripción |
 | :---- | :---- |
 | `<table>` | Define la tabla. |
+| `<caption>` | Título descriptivo de la tabla (semánticamente correcto). |
 | `<thead>` | Contiene las filas de encabezado (opcional). |
 | `<tbody>` | Contiene las filas de datos principales. |
 | `<tfoot>` | Contiene las filas de pie de tabla (opcional). |
@@ -241,7 +244,7 @@ Por ejemplo:
 </table>
 ```
 
-## **7. Contenido Multimedia**
+## 7. Contenido Multimedia
 
 ### **Vídeo `<video>`**
 
@@ -261,12 +264,12 @@ El formato recomendado es MP4 (H.264).
 
 Funciona de manera similar a `<video>`, con atributos como `controls`, `autoplay`, `loop`. El formato recomendado es MP3.  
 
-## **8. Etiquetas de Agrupamiento**
+## 8. Etiquetas de Agrupamiento
 
 - `<div>`: Contenedor genérico de **bloque**. Se usa para agrupar elementos y aplicarles estilos con CSS o manipularlos con JavaScript. No tiene valor semántico.
 - `<span>`: Contenedor genérico **en línea**. Se usa para agrupar una parte de un texto o de un elemento en línea, generalmente para aplicarle un estilo específico.
 
-## **9. HTML Semántico**
+## 9. HTML Semántico
 
 Usar etiquetas semánticas ayuda a los navegadores y buscadores a entender la estructura del contenido.
 
@@ -293,7 +296,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 - **Roles comunes**: `presentation` (elimina la semántica), `button`, `search`, `navigation`, `main`, `banner`, `dialog`, `alert`.
 - **Recomendación**: Usa `role` con moderación y solo cuando sea necesario. Un mal uso puede empeorar la accesibilidad. [Aquí puedes consultar la lista completa de roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-## **10. Formularios**
+## 10. Formularios
 
 ### **Estructura**
 
@@ -360,7 +363,7 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 </datalist>
 ```
 
-## **11. Otros Elementos Útiles**
+## 11. Otros Elementos Útiles
 
 - `<iframe>`: Incrusta otra página web dentro de la actual.  
 - `<dialog>`: Permite crear ventanas modales o pop-ups nativos. Tiene un buen soporte en navegadores modernos.  
@@ -373,7 +376,7 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 </figure>
 ```
 
-## **12. Notas Importantes**
+## 12. Notas Importantes
 
 ### **User-Agent Stylesheet**
 
@@ -381,7 +384,7 @@ Cada navegador aplica un conjunto de estilos por defecto a los elementos HTML pa
 
 Puedes inspeccionar estos estilos con las herramientas de desarrollador de tu navegador. Es el motivo por el cual a menudo se usan "resets" o "normalizadores" de CSS al inicio de un proyecto, para anular estas reglas y asegurar una apariencia consistente en todos los navegadores.
 
-## **13. Recursos Adicionales**
+## 13. Recursos Adicionales
 
 - **Documentación de Referencia (Imprescindible):**  
   - [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML)  
