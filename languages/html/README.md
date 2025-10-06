@@ -9,13 +9,14 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructur
 3. [Etiquetas de Texto Comunes](#3-etiquetas-de-texto-comunes)
 4. [Enlaces e Imágenes](#4-enlaces-e-imágenes)
 5. [Listas](#5-listas)
-6. [Contenido Multimedia](#6-contenido-multimedia)
-7. [Etiquetas de Agrupamiento](#7-etiquetas-de-agrupamiento)
-8. [HTML Semántico](#8-html-semántico)
-9. [Formularios](#9-formularios)
-10. [Otros Elementos Útiles](#10-otros-elementos-útiles)
-11. [Notas Importantes](#11-notas-importantes)
-12. [Recursos Adicionales](#12-recursos-adicionales)
+6. [Tablas](#6-tablas)
+7. [Contenido Multimedia](#7-contenido-multimedia)
+8. [Etiquetas de Agrupamiento](#8-etiquetas-de-agrupamiento)
+9. [HTML Semántico](#9-html-semántico)
+10. [Formularios](#10-formularios)
+11. [Otros Elementos Útiles](#11-otros-elementos-útiles)
+12. [Notas Importantes](#12-notas-importantes)
+13. [Recursos Adicionales](#13-recursos-adicionales)
 
 ## **1. Conceptos Fundamentales**
 
@@ -45,6 +46,16 @@ Los atributos pueden clasificarse en:
 - **Globales**: Se pueden usar en cualquier etiqueta (ej: `id`, `class`, `title`, `hidden`).
 - **Específicos**: Solo aplican a ciertos elementos (ej: `href` en `<a>` o `src` en `<img>`).
 - **Booleanos**: Su presencia implica un valor `true`. No necesitan un valor asignado (ej: `controls`, `autoplay`, `required`).
+
+### **Comentarios**
+
+Los comentarios permiten dejar notas en el código que no serán visibles en la página.
+
+```html
+<!-- Esto es un comentario -->
+<p>Este párrafo sí se muestra.</p>
+<!-- <p>Este párrafo está comentado y no se verá.</p> -->
+```
 
 ## **2. Estructura Básica de un Documento**
 
@@ -116,10 +127,39 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 <a href="https://www.ejemplo.com" target="_blank" rel="noreferrer">Visita Ejemplo.com</a>
 ```
 
-- `href`: La URL de destino.  
-- `target="_blank"`: Abre el enlace en una nueva pestaña.  
-- `rel="noreferrer"`: Por seguridad, evita que la página de destino sepa de dónde vienes.  
+- `href`: La URL de destino.
 - `download`: Indica al navegador que descargue el recurso enlazado.  
+- `target="_blank"`: Abre el enlace en una nueva pestaña.  
+- `rel="noopener"`: Evita que la nueva pestaña acceda a la página que la abrió a través de `window.opener`.  
+- `rel="noreferrer"`: Impide que se envíe información sobre la página de origen (referer) al sitio de destino.  
+
+En la práctica, `target="_blank"`, `rel="noopener"` y `rel="noreferrer"` se suelen usar juntos:  
+
+```html
+<a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Abrir enlace seguro</a>
+```
+
+#### **Enviar un correo electrónico**
+
+Puedes crear un enlace que abra el cliente de correo predeterminado del usuario con el campo “Para” (y opcionalmente “Asunto” o “Mensaje”) rellenado.
+
+```html
+<a href="mailto:contacto@ejemplo.com?subject=Consulta&body=Hola,%20quisiera%20más%20información.">
+  Enviar correo
+</a>
+```
+
+#### **Crear un enlace de WhatsApp**
+
+Puedes crear un enlace que abra una conversación de WhatsApp con un número y un mensaje predefinido.
+
+```html
+<!-- Enlace simple -->
+<a href="https://wa.me/34600123456">Enviar mensaje a este número</a>
+
+<!-- Enlace con mensaje predefinido -->
+<a href="https://wa.me/34600123456?text=Hola,%20quiero%20más%20información">Contactar por WhatsApp</a>
+```
 
 ### **Imágenes `<img>`**
 
@@ -156,9 +196,56 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 </ul>
 ```
 
-## **6. Contenido Multimedia**
+## **6. Tablas**
+
+Las tablas permiten organizar información en filas y columnas.
+
+| Etiqueta | Descripción |
+| :---- | :---- |
+| `<table>` | Define la tabla. |
+| `<thead>` | Contiene las filas de encabezado (opcional). |
+| `<tbody>` | Contiene las filas de datos principales. |
+| `<tfoot>` | Contiene las filas de pie de tabla (opcional). |
+| `<tr>` | Fila de la tabla. |
+| `<th>` | Celda de encabezado (texto en negrita y centrado por defecto). |
+| `<td>` | Celda de datos. |
+
+| Atributo | Descripción |
+| :---- | :---- |
+| `colspan` | Une varias columnas en una celda. |
+| `rowspan` | Une varias filas en una celda. |
+
+Por ejemplo:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Ciudad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ana</td>
+      <td>25</td>
+      <td>Madrid</td>
+    </tr>
+    <tr>
+      <td>Lucas</td>
+      <td>30</td>
+      <td>Sevilla</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## **7. Contenido Multimedia**
 
 ### **Vídeo `<video>`**
+
+El formato recomendado es MP4 (H.264).
 
 ```html
 <video src="/videos/mi-video.mp4" controls muted autoplay loop poster="/img/preview.jpg"></video>
@@ -172,14 +259,14 @@ Puedes previsualizar cómo se verá con herramientas como [OpenGraph.xyz](https:
 
 ### **Audio `<audio>`**
 
-Funciona de manera similar a `<video>`, con atributos como `controls`, `autoplay`, `loop`.  
+Funciona de manera similar a `<video>`, con atributos como `controls`, `autoplay`, `loop`. El formato recomendado es MP3.  
 
-## **7. Etiquetas de Agrupamiento**
+## **8. Etiquetas de Agrupamiento**
 
 - `<div>`: Contenedor genérico de **bloque**. Se usa para agrupar elementos y aplicarles estilos con CSS o manipularlos con JavaScript. No tiene valor semántico.
 - `<span>`: Contenedor genérico **en línea**. Se usa para agrupar una parte de un texto o de un elemento en línea, generalmente para aplicarle un estilo específico.
 
-## **8. HTML Semántico**
+## **9. HTML Semántico**
 
 Usar etiquetas semánticas ayuda a los navegadores y buscadores a entender la estructura del contenido.
 
@@ -206,7 +293,7 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 - **Roles comunes**: `presentation` (elimina la semántica), `button`, `search`, `navigation`, `main`, `banner`, `dialog`, `alert`.
 - **Recomendación**: Usa `role` con moderación y solo cuando sea necesario. Un mal uso puede empeorar la accesibilidad. [Aquí puedes consultar la lista completa de roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-## **9. Formularios**
+## **10. Formularios**
 
 ### **Estructura**
 
@@ -222,14 +309,43 @@ Sirve para dar un significado semántico explícito a elementos que no lo tienen
 </form>
 ```
 
-- `<form>`: Contenedor principal del formulario.  
-- `<fieldset>`: Agrupa campos relacionados.  
-- `<legend>`: Título para un `<fieldset>`.  
-- `<label>`:  Etiqueta descriptiva para un campo. El atributo `for` lo asocia con el id del `input`.  
-- `<input>`:  El campo de entrada de datos. El atributo `type` define su comportamiento (`text`, `email`, `password`, `checkbox`, `file`, etc.).  
-- `<textarea>`: Campo de texto multilínea.  
-- `<select>` y `<option>`: Lista desplegable.  
-- `<button>`: Botón para enviar el formulario o realizar acciones con JavaScript.  
+| Etiqueta | Descripción |
+| :---- | :---- |
+| `<form>` | Contenedor principal del formulario. |
+| `<fieldset>` | Agrupa campos relacionados. |
+| `<legend>` | Título para un `<fieldset>`. |
+| `<label>` | Etiqueta descriptiva para un campo. El atributo `for` lo asocia con el id del `input`. |
+| `<input>` | El campo de entrada de datos. El atributo `type` define su comportamiento (`text`, `email`, `password`, `checkbox`, `file`, etc.). |
+| `<textarea>` |Campo de texto multilínea. |
+| `<select>` y `<option>` | Lista desplegable. |
+| `<button>` | Botón para enviar el formulario o realizar acciones con JavaScript. |
+
+### **Tipos de entrada comunes**
+| Tipo | Descripción |
+| :---- | :---- |
+| `text` | Campo de texto de una línea. |
+| `email` | Valida formato de correo. |
+| `password` | Oculta los caracteres introducidos. |
+| `number` | Campo numérico con controles. |
+| `range` | Selector deslizante (mín. / máx.). |
+| `date`, `time`, `datetime-local` | Campos para seleccionar fechas y horas. |
+| `file` | Permite subir archivos. |
+| `color` | Selector de color. |
+| `checkbox` | Casilla de verificación. |
+| `radio` | Botón de selección única. |
+| `hidden` | Campo oculto que no se muestra al usuario. |
+
+### **Atributos útiles**
+| Atributo | Descripción |
+| :---- | :---- |
+| `placeholder` | Texto guía dentro del campo. |
+| `required` | Campo obligatorio. |
+| `readonly` | Solo lectura. |
+| `disabled` | Desactiva el campo. |
+| `pattern` | Expresión regular para validación personalizada. |
+| `min`, `max`, `step` | Límites y saltos para valores numéricos. |
+| `multiple` | Permite seleccionar varios archivos u opciones. |
+| `autofocus` | Coloca el foco automáticamente al cargar el formulario. |
 
 ### **Autocompletado con `<datalist>`**
 
@@ -244,7 +360,7 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 </datalist>
 ```
 
-## **10. Otros Elementos Útiles**
+## **11. Otros Elementos Útiles**
 
 - `<iframe>`: Incrusta otra página web dentro de la actual.  
 - `<dialog>`: Permite crear ventanas modales o pop-ups nativos. Tiene un buen soporte en navegadores modernos.  
@@ -257,7 +373,7 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 </figure>
 ```
 
-## **11. Notas importantes**
+## **12. Notas Importantes**
 
 ### **User-Agent Stylesheet**
 
@@ -265,21 +381,7 @@ Cada navegador aplica un conjunto de estilos por defecto a los elementos HTML pa
 
 Puedes inspeccionar estos estilos con las herramientas de desarrollador de tu navegador. Es el motivo por el cual a menudo se usan "resets" o "normalizadores" de CSS al inicio de un proyecto, para anular estas reglas y asegurar una apariencia consistente en todos los navegadores.
 
-### **Casos de Uso Prácticos**
-
-#### **Crear un enlace de WhatsApp**
-
-Puedes crear un enlace que abra una conversación de WhatsApp con un número y un mensaje predefinido.
-
-```html
-<!-- Enlace simple -->
-<a href="https://wa.me/34600123456">Enviar mensaje a este número</a>
-
-<!-- Enlace con mensaje predefinido -->
-<a href="https://wa.me/34600123456?text=Hola,%20quiero%20más%20información">Contactar por WhatsApp</a>
-```
-
-## **12. Recursos Adicionales**
+## **13. Recursos Adicionales**
 
 - **Documentación de Referencia (Imprescindible):**  
   - [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML)  
