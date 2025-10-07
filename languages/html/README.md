@@ -386,11 +386,20 @@ Puedes inspeccionar estos estilos con las herramientas de desarrollador de tu na
 
 ## 13. Recursos Adicionales
 
-- **Documentación de Referencia (Imprescindible):**  
-  - [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML)  
-- **Guías y Tutoriales:**  
-  - [W3Schools HTML Tutorial](https://www.w3schools.com/html/)  
-  - [freeCodeCamp](https://www.freecodecamp.org/)  
-- **Validadores y Herramientas:**  
-  - [W3C Markup Validation Service](https://validator.w3.org/)  
-  - [Can I use...](https://caniuse.com/)  
+### Documentación de Referencia
+- [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML): La documentación más completa y fiable sobre HTML. Es la referencia esencial para cualquier desarrollador.  
+### Guías y Tutoriales
+- [W3Schools HTML Tutorial](https://www.w3schools.com/html/): Ideal para principiantes, con explicaciones claras y ejemplos interactivos para practicar en el momento.
+- [web.dev by Google](https://web.dev/learn/html): Curso oficial de Google para aprender HTML desde los fundamentos hasta conceptos avanzados.    
+- [freeCodeCamp](https://www.freecodecamp.org/): Plataforma de aprendizaje interactiva y gratuita donde aprendes completando proyectos reales.
+- [HTMLCheatSheet.com](https://htmlcheatsheet.com/): Una web interactiva con chuletas visuales y herramientas para generar elementos HTML rápidamente.  
+### Videotutoriales
+- [Curso de HTML de HolaMundo (1 hora)](https://youtu.be/MJkdaVFHrto): Un excelente resumen para entender todas las bases de HTML de forma rápida y directa.
+- [Curso de HTML de MiduDev (2 horas)](https://youtu.be/3nYLTiY5skU): Un curso intensivo y práctico que profundiza en el HTML semántico y moderno.
+- [Curso completo de HTML5 de Píldoras Informáticas](https://www.youtube.com/watch?v=QC9_8nRNNHA&list=PLU8oAlHdN5BnX63lyAeV0LzLnpGudgRrK): Una lista de reproducción con 73 vídeos que cubren absolutamente todo sobre HTML5, ideal para aprender a fondo.
+### Herramientas y Editores Online
+- [CodePen](https://codepen.io/pen/): Un editor de código online (HTML, CSS y JS) perfecto para experimentar, prototipar y compartir tus creaciones.  
+- [W3C Markup Validation Service](https://validator.w3.org/): Herramienta oficial para comprobar si tu código HTML es válido y no contiene errores.  
+- [Can I use...](https://caniuse.com/): Una base de datos para consultar la compatibilidad de cualquier etiqueta o atributo HTML/CSS con los diferentes navegadores.
+### Herramientas y Editores Online
+- [HTMLrev](https://htmlrev.com/free-html-templates.html): Una gran colección de plantillas HTML gratuitas y modernas para usar como base en tus proyectos.
