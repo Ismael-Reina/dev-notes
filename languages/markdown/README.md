@@ -260,7 +260,7 @@ Si solo quieres que el texto baje a la línea siguiente sin crear un párrafo nu
 * [Markdown Guide](https://www.markdownguide.org/): Una guía muy completa y detallada (en inglés).
 * [GitHub Guide: Mastering Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax): La documentación oficial de GitHub sobre su versión de Markdown (GFM).
 
-### Vídeo Tutorial
+### Videotutoriales
 
 * [Tutorial de Markdown por MoureDev](https://youtu.be/77Ggk1uzO2A): Un excelente recorrido en vídeo por la sintaxis de Markdown.
 
