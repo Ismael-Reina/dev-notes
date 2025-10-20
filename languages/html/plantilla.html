@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+=========================================================
+  PLANTILLA BASE DE HTML5
+  Autor: [Tu nombre o alias]
+  Fecha: [YYYY-MM-DD]
+  Descripción: Plantilla base con estructura semántica, 
+  etiquetas meta esenciales y zonas comunes de una web.
+  Versión: 1.0
+=========================================================
+-->
+
+<html lang="es">
+<head>
+  <!--
+    ========== METADATOS BÁSICOS ==========
+    La sección <head> contiene información que no se muestra directamente,
+    pero que describe el documento, su estilo y comportamiento.
+  -->
+
+  <meta charset="UTF-8"> <!-- Codificación de caracteres universal -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable -->
+  <meta name="description" content="Breve descripción del sitio para SEO y buscadores.">
+  <meta name="author" content="[Tu nombre o empresa]">
+  <meta name="robots" content="index, follow"> <!-- Permite indexación -->
+  <meta name="theme-color" content="#0a84ff"> <!-- Color del navegador en móviles -->
+
+  <!--
+    ========== FAVICONES ==========
+    Iconos para pestañas y dispositivos.
+  -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <!--
+    ========== SEO Y REDES SOCIALES ==========
+    Open Graph y Twitter Cards mejoran la presentación del sitio al compartirlo.
+  -->
+  <meta property="og:title" content="Título del sitio">
+  <meta property="og:description" content="Descripción breve del contenido o propósito.">
+  <meta property="og:image" content="https://ejemplo.com/imagen-preview.jpg">
+  <meta property="og:image:alt" content="Descripción accesible de la imagen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ejemplo.com">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Título del sitio en Twitter">
+  <meta name="twitter:description" content="Descripción breve para Twitter.">
+  <meta name="twitter:image" content="https://ejemplo.com/imagen-twitter.jpg">
+
+  <title>Título de la Página</title> <!-- Título que aparece en la pestaña -->
+
+  <!--
+    ========== HOJAS DE ESTILO ==========
+    Aquí se enlazan los archivos CSS externos o internos.
+  -->
+  <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+<body>
+  <!--
+    =========================================================
+    CABECERA PRINCIPAL DEL SITIO
+    Contiene el logotipo, nombre del sitio y navegación principal.
+    =========================================================
+  -->
+  <header>
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logotipo del sitio">
+      <h1>Nombre del Sitio</h1>
+    </div>
+
+    <nav>
+      <!-- Menú de navegación principal -->
+      <ul>
+        <li><a href="#inicio" class="activo">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--
+    =========================================================
+    CONTENIDO PRINCIPAL
+    Incluye las secciones y artículos que forman la parte visible principal.
+    Solo debe haber un <main> por página.
+    =========================================================
+  -->
+  <main id="inicio">
+    <!-- Sección destacada o hero -->
+    <section class="hero">
+      <h2>Bienvenido a Nuestro Sitio Web</h2>
+      <p>Un texto introductorio breve sobre lo que ofrecemos.</p>
+      <a href="#servicios" class="boton">Ver más</a>
+    </section>
+
+    <!-- Otra sección con artículos -->
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <article>
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios y aplicaciones web modernas y eficientes.</p>
+      </article>
+      <article>
+        <h3>Consultoría</h3>
+        <p>Asesoría personalizada para tu presencia digital.</p>
+      </article>
+    </section>
+
+    <!-- Contenido adicional o lateral -->
+    <aside>
+      <h3>Noticias recientes</h3>
+      <ul>
+        <li><a href="#">Actualización de producto 1.2</a></li>
+        <li><a href="#">Nuevo artículo en el blog</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!--
+    =========================================================
+    PIE DE PÁGINA
+    Contiene información de contacto, derechos y enlaces secundarios.
+    =========================================================
+  -->
+  <footer>
+    <section id="contacto">
+      <h3>Contacto</h3>
+      <p>Correo: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></p>
+      <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
+    </section>
+
+    <section class="redes-sociales">
+      <a href="https://twitter.com/usuario" target="_blank" rel="noopener noreferrer">Twitter</a> |
+      <a href="https://linkedin.com/in/usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </section>
+
+    <p>© 2025 - Nombre del Sitio. Todos los derechos reservados.</p>
+  </footer>
+
+  <!--
+    =========================================================
+    SCRIPTS
+    Archivos de JavaScript o librerías externas.
+    =========================================================
+  -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
