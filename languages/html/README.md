@@ -15,8 +15,10 @@ HTML (HyperText Markup Language) es el lenguaje estándar para crear y estructur
 9. [HTML Semántico](#9-html-semántico)
 10. [Formularios](#10-formularios)
 11. [Otros Elementos Útiles](#11-otros-elementos-útiles)
-12. [Notas Importantes](#12-notas-importantes)
-13. [Recursos Adicionales](#13-recursos-adicionales)
+12. [Estilos y Recursos CSS](#12-estilos-y-recursos-css)
+13. [Scripts y Recursos Externos](#13-scripts-y-recursos-externos)
+14. [Notas Importantes](#14-notas-importantes)
+15. [Recursos Adicionales](#15-recursos-adicionales)
 
 ## 1. Conceptos Fundamentales
 
@@ -376,7 +378,90 @@ Puedes proporcionar una lista de sugerencias a un campo de texto.
 </figure>
 ```
 
-## 12. Notas Importantes
+## **12. Estilos y Recursos CSS**
+
+La etiqueta `<link>` se utiliza para vincular recursos externos al documento HTML, como hojas de estilo CSS, fuentes o íconos.  
+Su uso más habitual es enlazar una hoja de estilos que define la apariencia visual de la página.
+
+### **Atributos comunes**
+
+| Atributo | Descripción |
+| :---- | :---- |
+| `rel` | Especifica la relación entre el documento actual y el recurso vinculado. En el caso de CSS, siempre será `"stylesheet"`. |
+| `href` | Define la ruta (absoluta o relativa) del archivo externo. |
+| `type` | Especifica el tipo de recurso. El valor habitual es `"text/css"`, aunque puede omitirse. |
+| `media` | Permite aplicar la hoja de estilos solo a ciertos medios (por ejemplo, `"screen"`, `"print"`, `"(max-width: 600px)"`). |
+
+### **Ejemplo avanzado**
+
+```html
+<!-- Hoja de estilo principal -->
+<link rel="stylesheet" href="/css/estilos.css">
+
+<!-- Hoja de estilo solo para impresión -->
+<link rel="stylesheet" href="/css/print.css" media="print">
+
+<!-- Hoja de estilo adaptativa -->
+<link rel="stylesheet" href="/css/responsive.css" media="(max-width: 768px)">
+```
+
+> 💡 **Consejo:** coloca las hojas de estilo dentro del `<head>` para que el navegador las cargue antes de renderizar la página.
+
+
+---
+
+## **13. Scripts y Recursos Externos**
+
+La etiqueta `<script>` permite incluir o enlazar código JavaScript dentro de una página HTML.  
+Generalmente se utiliza al final del `<body>` o en el `<head>` con el atributo `defer` para evitar bloquear la carga del contenido.
+
+### **Ejemplo básico**
+
+```html
+<script src="/js/app.js"></script>
+```
+
+### **Atributos comunes**
+
+| Atributo | Descripción |
+| :---- | :---- |
+| `src` | Especifica la ruta del archivo JavaScript externo. |
+| `defer` | Retrasa la ejecución del script hasta que el HTML esté completamente cargado. Ideal para scripts propios. |
+| `async` | Descarga y ejecuta el script en paralelo. Útil para scripts externos independientes (como Google Analytics). |
+| `type` | Define el tipo de script. Por defecto es `"text/javascript"`. |
+| `nomodule` | Ejecuta el script solo si el navegador **no** soporta módulos ES6. |
+| `crossorigin` | Controla las políticas CORS en scripts cargados desde otros dominios. |
+
+### **Ejemplos de uso**
+
+```html
+<!-- Script estándar al final del body -->
+<script src="/js/main.js"></script>
+
+<!-- Script en el head con defer -->
+<script src="/js/main.js" defer></script>
+
+<!-- Script inline -->
+<script>
+  console.log("Hola desde el HTML");
+</script>
+
+<!-- Script moderno con módulos ES6 -->
+<script type="module" src="/js/modulo.js"></script>
+```
+
+### **Ubicación recomendada**
+
+| Ubicación | Recomendado para | Motivo |
+| :---- | :---- | :---- |
+| Final del `<body>` | Scripts propios y dependientes del DOM | Evita bloquear la carga del contenido. |
+| `<head>` con `defer` | Scripts que pueden cargarse en paralelo y ejecutarse al final | Estructura limpia y moderna. |
+| `<head>` con `async` | Scripts externos que no dependen del DOM ni del resto de scripts | Descarga más rápida, pero sin orden garantizado. |
+
+> 💡 **Consejo:**  
+> Usa `defer` para tus scripts principales y `async` solo para scripts externos independientes.
+
+## 14. Notas Importantes
 
 ### User-Agent Stylesheet
 
@@ -384,7 +469,7 @@ Cada navegador aplica un conjunto de estilos por defecto a los elementos HTML pa
 
 Puedes inspeccionar estos estilos con las herramientas de desarrollador de tu navegador. Es el motivo por el cual a menudo se usan "resets" o "normalizadores" de CSS al inicio de un proyecto, para anular estas reglas y asegurar una apariencia consistente en todos los navegadores.
 
-## 13. Recursos Adicionales
+## 15. Recursos Adicionales
 
 ### Documentación de Referencia
 - [MDN Web Docs (Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML): La documentación más completa y fiable sobre HTML. Es la referencia esencial para cualquier desarrollador.  
