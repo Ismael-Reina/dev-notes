@@ -10,7 +10,7 @@ Aquí tienes una guía del software más interesante y utilizado, las mejores he
 
 ---
 
-## I. 💻 Software Esencial y de Uso General
+## 1. 💻 Software Esencial y de Uso General
 
 Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de Linux.
 
@@ -41,7 +41,7 @@ Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de
 
 ---
 
-## II. 👨‍💻 Las Mejores Aplicaciones para Programadores
+## 2. 👨‍💻 Las Mejores Aplicaciones para Programadores
 
 Linux es el sistema operativo preferido por muchos desarrolladores, y estas son las herramientas clave:
 
@@ -63,18 +63,18 @@ Linux es el sistema operativo preferido por muchos desarrolladores, y estas son 
 
 ---
 
-## III. 🎮 Videojuegos Populares en Linux
+## 3. 🎮 Videojuegos Populares en Linux
 
 El *gaming* en Linux ha mejorado drásticamente gracias a herramientas de compatibilidad y el auge de **Steam**.
 
-### 1. Juegos Nativos y de Código Abierto
+### 3.1. Juegos Nativos y de Código Abierto
 
 * **Juegos Nativos:** Muchos títulos importantes de estudios como **Valve** (ej. *Counter-Strike 2, Dota 2, Team Fortress 2, Half-Life 2, Portal 2*) tienen versiones nativas para Linux.
 * **0 A.D.:** Un juego de estrategia en tiempo real de código abierto (similar a *Age of Empires*).
 * **SuperTuxKart:** Un divertido juego de carreras de karts de código abierto (similar a *Mario Kart*).
 * **The Battle for Wesnoth:** Un juego de estrategia por turnos de fantasía de código abierto.
 
-### 2. La Clave de la Compatibilidad: Steam y Proton
+### 3.2. La Clave de la Compatibilidad: Steam y Proton
 
 La mayoría de los juegos de Windows ahora se pueden jugar en Linux gracias a **Steam** y la herramienta **Proton** (una capa de compatibilidad de Valve):
 
@@ -84,7 +84,7 @@ La mayoría de los juegos de Windows ahora se pueden jugar en Linux gracias a **
 | **Proton** | Herramienta que usa Steam para ejecutar juegos de Windows. Activa la opción **Steam Play** en los ajustes de Steam para acceder a miles de títulos. |
 | **Heroic Games Launcher** | Un lanzador de juegos que permite gestionar juegos de **Epic Games Store** y **GOG** en Linux usando Proton. |
 
-### 3. Títulos Populares Jugables con Proton (No nativos de Linux)
+### 3.3. Títulos Populares Jugables con Proton (No nativos de Linux)
 
 La lista es casi infinita, pero estos son algunos ejemplos de juegos populares con excelente rendimiento en Linux:
 
