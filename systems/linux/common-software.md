@@ -10,7 +10,7 @@ Aquí tienes una guía del software más interesante y utilizado, las mejores he
 
 ---
 
-## 1. 💻 Software Esencial y de Uso General
+## 1. Software Esencial y de Uso General
 
 Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de Linux.
 
@@ -22,6 +22,7 @@ Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de
 | **Navegador (Alternativa)** | **Google Chrome** (o **Chromium**)| Chrome es popular por su sincronización; Chromium es la versión 100% de código abierto. | DEB (Chrome) / Repositorio (Chromium) |
 | **Ofimática** | **LibreOffice** | La suite ofimática más utilizada. Incluye Writer (Word), Calc (Excel) e Impress (PowerPoint). | Repositorio (APT) |
 
+
 ### 🎨 Multimedia y Diseño
 
 | Categoría | Aplicación | Descripción | Formato Común |
@@ -30,6 +31,7 @@ Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de
 | **Edición de Imagen** | **GIMP** (GNU Image Manipulation Program) | Un potente editor de gráficos *raster* (mapa de bits), considerado el "Photoshop de código abierto". | Repositorio / Flatpak |
 | **Gráficos Vectoriales**| **Inkscape** | Un editor de gráficos vectoriales profesional, ideal para logotipos, ilustraciones y diseño web. | Repositorio / Flatpak |
 | **Edición de Audio** | **Audacity** | Editor y grabador de audio muy popular para podcasts y música. | Repositorio / Flatpak |
+
 
 ### ⚙️ Herramientas del Sistema
 
@@ -40,6 +42,7 @@ Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de
 | **Virtualización** | **VirtualBox** o **GNOME Boxes** | Permite ejecutar otros sistemas operativos (como Windows o versiones de Linux) dentro de tu sistema. | Repositorio / DEB |
 
 ---
+
 
 ## 2. Las Mejores Aplicaciones para Programadores
 
@@ -54,6 +57,7 @@ Linux es el sistema operativo preferido por muchos desarrolladores, y estas son 
 | **Vim / Neovim y Emacs** | Editores de Terminal | Editores legendarios basados en terminal. Requieren una curva de aprendizaje, pero ofrecen una velocidad y eficiencia inigualables para desarrolladores experimentados. |
 | **Sublime Text** | Editor de Código Rápido | De pago, pero con una versión de evaluación perpetua. Conocido por su velocidad y potente sistema de selección múltiple. |
 
+
 ### 🗃️ Herramientas de Desarrollo
 
 * **Git:** El sistema de control de versiones estándar. Se usa intensamente desde la terminal.
@@ -63,9 +67,11 @@ Linux es el sistema operativo preferido por muchos desarrolladores, y estas son 
 
 ---
 
-## 3. 🎮 Videojuegos Populares en Linux
+
+## 3. Videojuegos Populares en Linux
 
 El *gaming* en Linux ha mejorado drásticamente gracias a herramientas de compatibilidad y el auge de **Steam**.
+
 
 ### 3.1. Juegos Nativos y de Código Abierto
 
@@ -73,6 +79,7 @@ El *gaming* en Linux ha mejorado drásticamente gracias a herramientas de compat
 * **0 A.D.:** Un juego de estrategia en tiempo real de código abierto (similar a *Age of Empires*).
 * **SuperTuxKart:** Un divertido juego de carreras de karts de código abierto (similar a *Mario Kart*).
 * **The Battle for Wesnoth:** Un juego de estrategia por turnos de fantasía de código abierto.
+
 
 ### 3.2. La Clave de la Compatibilidad: Steam y Proton
 
@@ -83,6 +90,7 @@ La mayoría de los juegos de Windows ahora se pueden jugar en Linux gracias a **
 | **Steam** | El cliente de juegos imprescindible. Asegúrate de instalarlo. |
 | **Proton** | Herramienta que usa Steam para ejecutar juegos de Windows. Activa la opción **Steam Play** en los ajustes de Steam para acceder a miles de títulos. |
 | **Heroic Games Launcher** | Un lanzador de juegos que permite gestionar juegos de **Epic Games Store** y **GOG** en Linux usando Proton. |
+
 
 ### 3.3. Títulos Populares Jugables con Proton (No nativos de Linux)
 
