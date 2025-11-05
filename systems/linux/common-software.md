@@ -41,7 +41,7 @@ Estas aplicaciones son ampliamente utilizadas en casi cualquier distribución de
 
 ---
 
-## 2. 👨‍💻 Las Mejores Aplicaciones para Programadores
+## 2. Las Mejores Aplicaciones para Programadores
 
 Linux es el sistema operativo preferido por muchos desarrolladores, y estas son las herramientas clave:
 
