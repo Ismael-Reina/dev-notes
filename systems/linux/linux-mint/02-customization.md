@@ -12,4 +12,4 @@ Elemento | Acción Recomendada | Cómo hacerlo
 **Menú de Inicio** | Personalizar el ícono y la funcionalidad. | Clic derecho en el ícono del menú -> `Configurar`. (Puedes cambiar el ícono y ajustar el tamaño).
 
 ---
-[◀ Volver: Instalación](./01-installation.md) | 🏠 [Ir al Índice](./README.md) | [Siguiente: Configuración ▶](./03-configuration.md)
+[◀ Volver: Instalación](./01-installation.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Configuración ▶](./03-configuration.md)
