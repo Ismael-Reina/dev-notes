@@ -40,4 +40,6 @@ Antes de empezar, necesitarás:
     * **Zona horaria:** Selecciona tu ubicación (ej. Madrid).
     * **Crear usuario:** Introduce tu nombre, un nombre para el equipo, tu nombre de usuario (ej. `ismael`) y una contraseña.
 
+---
+[Ir al Índice](./README.md) | [Siguiente: Personalización](./02-customization.md) ➔
 6.  **Finalizar:** El instalador comenzará a copiar los archivos. Este proceso tardará unos minutos. Una vez termine, te pedirá reiniciar el equipo. Retira el USB cuando te lo indique y... ¡listo! Ya tendrás Linux Mint instalado.
