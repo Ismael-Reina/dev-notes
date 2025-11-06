@@ -33,3 +33,6 @@ Actualizar Sistema | `sudo apt update && sudo apt upgrade`
 Limpiar Sistema | `sudo apt autoreme`
 Instalar un programa (APT) | `sudo apt install [nombre_paquete]`
 Limpiar Flatpak | `flatpak uninstall --unused`
+
+---
+[◀ Volver: Personalización](./02-customization.md) | [🏠 Ir al Índice](./README.md)
