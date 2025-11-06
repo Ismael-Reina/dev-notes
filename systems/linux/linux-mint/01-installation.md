@@ -43,4 +43,4 @@ Antes de empezar, necesitarás:
 6.  **Finalizar:** El instalador comenzará a copiar los archivos. Este proceso tardará unos minutos. Una vez termine, te pedirá reiniciar el equipo. Retira el USB cuando te lo indique y... ¡listo! Ya tendrás Linux Mint instalado.
 
 ---
-[Ir al Índice](./README.md) | [Siguiente: Personalización](./02-customization.md) ➔
+[Ir al Índice](./README.md) | [Siguiente: Personalización ➔](./02-customization.md)
