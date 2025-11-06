@@ -10,3 +10,6 @@ Elemento | Acción Recomendada | Cómo hacerlo
 **Dock (Opcional)** | Añadir un dock flotante para accesos directos. | Instala Plank (`sudo apt install plank`). Ejecuta Plank y usa `Ctrl + Clic derecho` en el dock para acceder a sus preferencias.
 **Fondo de Pantalla** | Elegir un fondo de tu gusto. | `Menú` -> `Fondos` o Clic derecho en el escritorio.
 **Menú de Inicio** | Personalizar el ícono y la funcionalidad. | Clic derecho en el ícono del menú -> `Configurar`. (Puedes cambiar el ícono y ajustar el tamaño).
+
+---
+[← Volver: Instalación](./01-installation.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Configuración →](./03-configuration.md)
