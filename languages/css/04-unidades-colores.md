@@ -28,35 +28,35 @@ Su valor es flexible y se calcula en relación a otra cosa. Son **esenciales** p
 Hay varias formas de definir colores en CSS.
 
 * **Keywords (Nombres)**
-    [BLOCK]css
+    ```css
     color: red;
     background-color: steelblue;
-    [BLOCK]
+    ```
 
 * **HEX (Hexadecimal)**
-    [BLOCK]css
+    ```css
     color: #FF0000; /* #RRGGBB */
     color: #F00; /* Abreviado: #RGB */
     color: #FF000080; /* Con transparencia: #RRGGBBAA */
-    [BLOCK]
+    ```
 
 * **RGB (Red, Green, Blue)**
-    [BLOCK]css
+    ```css
     color: rgb(255, 0, 0); /* De 0 a 255 */
     color: rgba(255, 0, 0, 0.5); /* Con 50% de opacidad (forma antigua) */
-    [BLOCK]
+    ```
 
 * **HSL (Hue, Saturation, Lightness)**
-    [BLOCK]css
+    ```css
     color: hsl(0, 100%, 50%); /* (Tono, Saturación, Luminosidad) */
     color: hsla(0, 100%, 50%, 0.5); /* Con 50% de opacidad (forma antigua) */
-    [BLOCK]
+    ```
 
 **Nota:** En CSS moderno, ya no necesitas usar `rgba` o `hsla`. Puedes pasar la transparencia directamente a `rgb` y `hsl` usando una barra (`/`):
-[BLOCK]css
+```css
 color: rgb(255 0 0 / 0.5);
 color: hsl(0 100% 50% / 0.5);
-[BLOCK]
+```
 
 ## Recursos para Profundizar
 
