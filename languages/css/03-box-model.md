@@ -42,7 +42,7 @@ Por esta razón, la mayoría de los proyectos comienzan con este código para ap
 ## Recursos para Profundizar
 
 * **MDN (Mozilla Developer Network)**:
-  * [El Modelo de Caja (Explicación detallada)](https://www.google.com/search?q=https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Box_Model)
+  * [El Modelo de Caja (Explicación detallada)](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Box_model)
   * [La propiedad box-sizing](https://developer.mozilla.org/es/docs/Web/CSS/box-sizing)
 
 ---
