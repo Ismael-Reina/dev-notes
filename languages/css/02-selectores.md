@@ -57,7 +57,7 @@ Permiten crear selectores más complejos combinando selectores simples.
 ## Recursos para Profundizar
 
 * **CSS Diner (Juego Interactivo)**: El mejor recurso para aprender selectores de forma práctica y divertida. Es un juego donde tienes que "seleccionar" platos usando CSS.
-    * [Jugar a CSS Diner](httpsio.com/)
+    * [Jugar a CSS Diner](https://flukeout.github.io/)
 * **MDN (Mozilla Developer Network)**: La referencia completa de todos los selectores.
     * [Referencia de Selectores CSS en MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 
