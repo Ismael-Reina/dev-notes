@@ -114,7 +114,7 @@ Podemos controlar esto con valores especiales:
 ## Recursos para Profundizar
 
   * **MDN (Mozilla Developer Network)**: La biblia de CSS.
-      * [Conceptos básicos de CSS](https://www.google.com/search?q=https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS)
+      * [Conceptos básicos de CSS](https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content)
       * [La Cascada y la Herencia](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
   * **Calculadora de Especificidad**: Una herramienta visual para entender cuánto "pesa" un selector.
       * [Calculadora de Keegan.st](https://specificity.keegan.st/)
