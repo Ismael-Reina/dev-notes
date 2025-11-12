@@ -132,7 +132,7 @@ a:hover {
 * **Google Fonts**: El directorio más grande y popular para explorar e importar fuentes web.
     * [Explorar Google Fonts](https://fonts.google.com/)
 * **MDN (Mozilla Developer Network)**:
-    * [Propiedades de Fuente Fundamentales](https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamental_text_and_font_styling)
+    * [Fundamentos de texto y fuentes tipográficas](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Text_styling/Fundamentals)
     * [Guía de `line-height`](https://developer.mozilla.org/es/docs/Web/CSS/line-height)
 
 ---
