@@ -28,28 +28,35 @@ Su valor es flexible y se calcula en relación a otra cosa. Son **esenciales** p
 Hay varias formas de definir colores en CSS.
 
 * **Keywords (Nombres)**
-  `color: red;`
-  `background-color: steelblue;`
+    [BLOCK]css
+    color: red;
+    background-color: steelblue;
+    [BLOCK]
 
 * **HEX (Hexadecimal)**
-  `color: #FF0000;` /* `#RRGGBB` */
-  `color: #F00;` /* Abreviado: `#RGB` */
-  `color: #FF000080;` /* Con transparencia: `#RRGGBBAA` */
+    [BLOCK]css
+    color: #FF0000; /* #RRGGBB */
+    color: #F00; /* Abreviado: #RGB */
+    color: #FF000080; /* Con transparencia: #RRGGBBAA */
+    [BLOCK]
 
 * **RGB (Red, Green, Blue)**
-  `color: rgb(255, 0, 0);` /* De 0 a 255 */
-
-* **RGBA (Con transparencia)**
-  `color: rgba(255, 0, 0, 0.5);` /* El 0.5 es 50% de opacidad */
+    [BLOCK]css
+    color: rgb(255, 0, 0); /* De 0 a 255 */
+    color: rgba(255, 0, 0, 0.5); /* Con 50% de opacidad (forma antigua) */
+    [BLOCK]
 
 * **HSL (Hue, Saturation, Lightness)**
-  Es una forma más intuitiva de definir colores.
-  `color: hsl(0, 100%, 50%);` /* (Tono, Saturación, Luminosidad) */
-  `color: hsla(0, 100%, 50%, 0.5);` /* Con transparencia */
+    [BLOCK]css
+    color: hsl(0, 100%, 50%); /* (Tono, Saturación, Luminosidad) */
+    color: hsla(0, 100%, 50%, 0.5); /* Con 50% de opacidad (forma antigua) */
+    [BLOCK]
 
 **Nota:** En CSS moderno, ya no necesitas usar `rgba` o `hsla`. Puedes pasar la transparencia directamente a `rgb` y `hsl` usando una barra (`/`):
-`color: rgb(255 0 0 / 0.5);`
-`color: hsl(0 100% 50% / 0.5);`
+[BLOCK]css
+color: rgb(255 0 0 / 0.5);
+color: hsl(0 100% 50% / 0.5);
+[BLOCK]
 
 ## Recursos para Profundizar
 
