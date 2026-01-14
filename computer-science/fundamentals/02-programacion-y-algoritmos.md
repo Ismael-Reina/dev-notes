@@ -33,7 +33,7 @@ Es un lenguaje falso, mezcla de lenguaje humano y convenciones de programación.
 
 **Ejemplo: Algoritmo para saber si eres mayor de edad**
 
-[BLOCK]pseudocodigo
+```pseudocodigo
 INICIO
     Leer edad
     SI edad >= 18 ENTONCES
@@ -42,7 +42,7 @@ INICIO
         Escribir "Eres menor de edad"
     FIN_SI
 FIN
-[BLOCK]
+```
 
 ### B. Ordinogramas (Diagramas de Flujo)
 Representación gráfica del algoritmo usando símbolos estandarizados unidos por flechas (líneas de flujo).
