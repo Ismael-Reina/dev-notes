@@ -56,6 +56,8 @@ Representación gráfica del algoritmo usando símbolos estandarizados unidos po
 
 **Ejemplo visual del mismo algoritmo de mayoría de edad:**
 
+![Diagrama de flujo mostrando el algoritmo para determinar si una persona es mayor de edad](./assets/ordinograma-mayor-edad.png)
+
 ---
 
 ## 4. Programación Estructurada
