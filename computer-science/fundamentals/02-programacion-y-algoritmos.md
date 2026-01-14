@@ -54,6 +54,10 @@ Representación gráfica del algoritmo usando símbolos estandarizados unidos po
 | **Rectángulo** | Proceso | Operaciones matemáticas, asignaciones de valor. |
 | **Rombo** | Decisión | Una pregunta con dos salidas posibles (Sí/No). Representa el `if`. |
 
+**Ejemplo visual del mismo algoritmo de mayoría de edad:**
+
+![Diagrama de flujo mostrando el algoritmo para determinar si una persona es mayor de edad](./assets/ordinograma-mayor-edad.png)
+
 ---
 
 ## 4. Programación Estructurada
