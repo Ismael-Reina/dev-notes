@@ -59,7 +59,7 @@ Representación gráfica del algoritmo usando símbolos estandarizados unidos po
 ![Diagrama de flujo mostrando el algoritmo para determinar si una persona es mayor de edad](./assets/ordinograma-mayor-edad.png)
 
 ---
-
+a
 ## 4. Programación Estructurada
 Es el paradigma fundamental que dice que todo programa puede escribirse utilizando únicamente tres estructuras de control. Esto evita el "código espagueti" (uso caótico de saltos `GOTO`).
 
