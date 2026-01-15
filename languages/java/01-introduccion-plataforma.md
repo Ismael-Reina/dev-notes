@@ -56,7 +56,7 @@ Conceptos que suelen confundirse pero son distintos:
 ---
 
 ## 5. Tipos de Ediciones (Distribuciones)
-* **Java SE (Standard Edition):** La API base. Incluye las bibliotecas fundamentales (`java.lang`, `java.util`). Es lo que estudiarás en el ciclo.
+* **Java SE (Standard Edition):** La API base. Incluye las bibliotecas fundamentales (`java.lang`, `java.util`).
 * **Jakarta EE (antes Java EE):** Versión empresarial. Añade librerías para desarrollo web, servidores y grandes sistemas distribuidos.
 * **Java ME (Micro Edition):** Versión reducida para dispositivos con recursos limitados (en desuso frente a Android).
 
