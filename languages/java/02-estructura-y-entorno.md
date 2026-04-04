@@ -55,8 +55,7 @@ Aunque se puede programar con el Bloc de notas y compilar por consola, profesion
 
 ## 4. Recursos para Profundizar
 * [📖 Java API Documentation](https://docs.oracle.com/en/java/javase/17/docs/api/index.html) - El manual de referencia oficial. Acostúmbrate a leerlo.
-* [🎥 Instalación del entorno (Eclipse/IntelliJ/JDK) - Píldoras Informáticas](https://www.youtube.com/watch?v=s4y0J1f_iKQ) - Guía paso a paso para configurar tu equipo.
-* [🎥 IntelliJ vs Eclipse vs NetBeans](https://www.youtube.com/watch?v=kYJyrfQ4dQM) - Comparativa para elegir IDE.
+* [🎥 Guía de iniciación a la API de Java (Enrique Barros)](https://youtu.be/drfzBWFPoDI) - Qué es la API, módulos, paquetes y cómo importar la clase Math.
 
 ---
 [◀ Volver: Introducción a la Plataforma](./01-introduccion-plataforma.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Variables y Tipos de Datos ▶](./03-variables-y-tipos.md)
