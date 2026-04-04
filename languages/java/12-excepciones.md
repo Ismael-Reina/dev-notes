@@ -67,4 +67,4 @@ public class DivisionSegura {
 * [⚡ Java Exceptions (W3Schools)](https://www.w3schools.com/java/java_try_catch.asp) - Ejemplos rápidos y lista de excepciones comunes.
 
 ---
-[◀ Volver: Bibliotecas y Consola](./11-bibliotecas-y-consola.md) | [🏠 Ir al Índice](./README.md)
+[◀ Volver: Bibliotecas y Consola](./11-bibliotecas-y-consola.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Cadenas de Caracteres ▶](./13-cadenas-de-caracteres.md)
