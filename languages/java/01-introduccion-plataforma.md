@@ -63,8 +63,11 @@ Conceptos que suelen confundirse pero son distintos:
 ---
 
 ## 6. Recursos para Profundizar
-* [🎥 ¿Por qué Java sigue siendo tan importante en 2025? (MoureDev)](https://youtu.be/mksMlTrV8QA) - Reflexión sobre la historia y vigencia de Java.
-* [🎥 Java Bytecode Explained](https://www.youtube.com/watch?v=GjfpE4w7wQM) - Cómo funciona la JVM por dentro.
+* [🎥 ¿Qué es Java y cuál es su historia? (EDteam)](https://youtu.be/E8weQyNVWug) - Por qué Java sigue dominando tras más de 25 años.
+* [🎥 ¿Por qué Java sigue siendo tan importante en 2025? (MoureDev)](https://youtu.be/mksMlTrV8QA) - Reflexión sobre la historia y vigencia del lenguaje.
+* [🎥 JDK vs JRE: ¿qué diferencia hay? (makigas)](https://youtu.be/tl_gmY1Sn1o) - Explicación clara y concisa (5 mins) de las herramientas de Java.
+* [🎥 Java Virtual Machine en 1 minuto (TechTalks)](https://youtu.be/3sse_zFXAx8) - Píldora de conocimiento rapidísima sobre la JVM.
+* [🎥 Arquitectura de la JVM: Cómo funciona realmente (Daniel Españadero)](https://youtu.be/QfOHeFjUOwg) - *Nivel Avanzado*. Profundiza en Heap, Stack, JIT Compiler y Garbage Collector.
 
 ---
 
