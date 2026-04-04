@@ -61,4 +61,11 @@ Conceptos que suelen confundirse pero son distintos:
 * **Java ME (Micro Edition):** Versión reducida para dispositivos con recursos limitados (en desuso frente a Android).
 
 ---
+
+## 6. Recursos para Profundizar
+* [🎥 ¿Por qué Java sigue siendo tan importante en 2025? (MoureDev)](https://youtu.be/mksMlTrV8QA) - Reflexión sobre la historia y vigencia de Java.
+* [🎥 Java Bytecode Explained](https://www.youtube.com/watch?v=GjfpE4w7wQM) - Cómo funciona la JVM por dentro.
+
+---
+
 [◀ Volver: Índice](./README.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Estructura y Entorno ▶](./02-estructura-y-entorno.md)
