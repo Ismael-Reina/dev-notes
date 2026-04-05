@@ -87,4 +87,4 @@ Si creas un array de 10 posiciones y necesitas guardar el elemento 11, la única
 * [📖 Java Arrays class (GeeksforGeeks)](https://www.geeksforgeeks.org/java/array-class-in-java/) - Ejemplos prácticos y teoría sobre cómo funcionan `sort()`, `binarySearch()` y la copia de arrays.
 
 ---
-[◀ Volver: Arrays Multidimensionales](./15-arrays-multidimensionales.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Diseño de Clases ▶](./17-diseno-clases.md)
+[◀ Volver: Arrays Multidimensionales](./15-arrays-multidimensionales.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Estructura y Encapsulamiento ▶](./17-estructura-y-encapsulamiento.md)
