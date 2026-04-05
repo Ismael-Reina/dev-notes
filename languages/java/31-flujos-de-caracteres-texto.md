@@ -58,7 +58,7 @@ Antiguamente se hacía en un bloque `finally` con `.close()`, pero con **Try-wit
 
 ## 5. Recursos para Profundizar
 * [📖 Character Streams (Oracle Docs)](https://docs.oracle.com/javase/tutorial/essential/io/charstreams.html) - Guía oficial sobre Readers y Writers.
-* [📖 BufferedReader in Java (W3Schools)](https://www.w3schools.com/java/ref_io_bufferedreader.asp) - Referencia rápida de métodos de lectura.
+* [📖 BufferedReader in Java (W3Schools)](https://www.w3schools.com/java/java_bufferedreader.asp) - Referencia rápida de métodos de lectura.
 
 ---
 [◀ Volver: Introducción a Ficheros](./30-introduccion-ficheros-clase-file.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Flujos de Bytes ▶](./32-flujos-de-bytes-binarios.md)
