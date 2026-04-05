@@ -74,7 +74,7 @@ public class EscribirDatos {
 ## 4. Recursos para Profundizar
 * [📖 Byte Streams (Oracle Docs)](https://docs.oracle.com/javase/tutorial/essential/io/bytestreams.html) - Guía oficial sobre la manipulación de flujos de bytes.
 * [📖 Data Streams (Oracle Docs)](https://docs.oracle.com/javase/tutorial/essential/io/datastreams.html) - Cómo guardar tipos primitivos en ficheros binarios.
-* [📖 FileInputStream in Java (GeeksforGeeks)](https://www.geeksforgeeks.org/fileinputstream-in-java-with-examples/) - Ejemplos prácticos y métodos clave.
+* [📖 FileInputStream in Java (GeeksforGeeks)](https://www.geeksforgeeks.org/java/java-io-fileinputstream-class-java/) - Ejemplos prácticos y métodos clave.
 
 ---
 [◀ Volver: Flujos de Caracteres](./31-flujos-de-caracteres-texto.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Serialización de Objetos ▶](./33-serializacion-de-objetos.md)
