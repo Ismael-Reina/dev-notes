@@ -10,7 +10,7 @@ La **persistencia** es la acción de guardar el estado de esos datos en un medio
 ## 2. Evolución del Almacenamiento de Datos
 
 ### A. Ficheros Planos (Archivos de Texto/Binarios)
-Es la forma más básica de persistencia (la que se estudia en los fundamentos de programación).
+Es la forma más básica de persistencia (la que se suele aprender al iniciarse en la programación).
 * **Ventajas:** Muy fáciles de implementar para datos simples (ej: guardar configuraciones o logs).
 * **Desventajas:** Pésimos para buscar información concreta. Si tienes un archivo con 10.000 clientes y quieres buscar uno, tienes que leer el archivo entero secuencialmente. Además, no manejan bien la concurrencia (dos usuarios intentando escribir a la vez).
 
@@ -26,7 +26,7 @@ Sistemas como MongoDB o Firebase. No usan tablas, sino "documentos" (parecidos a
 ---
 
 ## 3. El Desfase Objeto-Relacional (Impedance Mismatch)
-Aquí radica el mayor reto de la asignatura de Acceso a Datos.
+Aquí radica uno de los mayores retos del desarrollo de software a nivel empresarial.
 
 En Java, programamos usando el **Paradigma Orientado a Objetos** (Clases, Herencia, Polimorfismo, Listas). Sin embargo, el 90% de las bases de datos del mundo son **Relacionales** (Tablas, Filas, Columnas, Claves Foráneas).
 
