@@ -88,4 +88,4 @@ public class CargarPartida {
 * [📖 The transient keyword (Baeldung)](https://www.baeldung.com/java-transient-keyword) - Por qué y cuándo evitar que ciertas variables se serialicen.
 
 ---
-[◀ Volver: Flujos de Bytes](./32-flujos-de-bytes-binarios.md) | [🏠 Ir al Índice](./README.md)
+[◀ Volver: Flujos de Bytes](./04-flujos-de-bytes-binarios.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Serialización de Objetos ▶](./05-serializacion-de-objetos.md)

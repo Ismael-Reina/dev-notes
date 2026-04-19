@@ -64,8 +64,6 @@ int maximo = Collections.max(numeros); // Devuelve 50
 * [📖 The Iterator Interface (Oracle Docs)](https://docs.oracle.com/javase/tutorial/collections/interfaces/collection.html#iterator) - Cómo y cuándo usar iteradores.
 * [📖 Collections Class in Java (GeeksforGeeks)](https://www.geeksforgeeks.org/collections-class-in-java/) - Lista de todos los algoritmos disponibles.
 
----
-[◀ Volver: Mapas y Diccionarios](./28-mapas-diccionarios.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Introducción a Ficheros ▶](./30-introduccion-ficheros-clase-file.md)
 
 ---
 [◀ Volver: Mapas y Diccionarios](./28-mapas-diccionarios.md) | [🏠 Ir al Índice](./README.md)

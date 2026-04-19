@@ -61,4 +61,4 @@ Antiguamente se hacía en un bloque `finally` con `.close()`, pero con **Try-wit
 * [📖 BufferedReader in Java (W3Schools)](https://www.w3schools.com/java/java_bufferedreader.asp) - Referencia rápida de métodos de lectura.
 
 ---
-[◀ Volver: Introducción a Ficheros](./30-introduccion-ficheros-clase-file.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Flujos de Bytes ▶](./32-flujos-de-bytes-binarios.md)
+[◀ Volver: Introducción a Ficheros](./02-introduccion-ficheros-clase-file.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Flujos de Bytes ▶](./04-flujos-de-bytes-binarios.md)

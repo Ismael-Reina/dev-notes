@@ -41,4 +41,4 @@ En este bloque estudiaremos las dos grandes formas de comunicar Java con una bas
 * [📖 Object-Relational Impedance Mismatch (Wikipedia)](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch) - Explicación detallada del problema de incompatibilidad entre objetos y tablas.
 
 ---
-[🏠 Ir al Índice General](../README.md) | [Siguiente: Formatos de Intercambio (XML/JSON) ▶](./02-formatos-intercambio-xml-json.md)
+[🏠 Ir al Índice](./README.md) | [Siguiente: Formatos de Intercambio (XML/JSON) ▶](./02-formatos-intercambio-xml-json.md)

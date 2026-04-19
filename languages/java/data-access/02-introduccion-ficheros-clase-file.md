@@ -47,4 +47,4 @@ if (f.exists()) {
 * [📖 Java File Class (GeeksforGeeks)](https://www.geeksforgeeks.org/file-class-in-java/) - Ejemplos de manipulación de directorios y archivos.
 
 ---
-[◀ Volver: Iteradores y Algoritmos](./29-iteradores-y-algoritmos.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Flujos de Caracteres ▶](./31-flujos-de-caracteres-texto.md)
+[◀ Volver: Introducción a la Persistencia de Datos](./01-introduccion-persistencia.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Flujos de Caracteres ▶](./03-flujos-de-caracteres-texto.md)

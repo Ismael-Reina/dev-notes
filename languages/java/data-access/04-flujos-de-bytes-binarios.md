@@ -77,4 +77,4 @@ public class EscribirDatos {
 * [📖 FileInputStream in Java (GeeksforGeeks)](https://www.geeksforgeeks.org/java/java-io-fileinputstream-class-java/) - Ejemplos prácticos y métodos clave.
 
 ---
-[◀ Volver: Flujos de Caracteres](./31-flujos-de-caracteres-texto.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Serialización de Objetos ▶](./33-serializacion-de-objetos.md)
+[◀ Volver: Flujos de Caracteres](./03-flujos-de-caracteres-texto.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Serialización de Objetos ▶](./05-serializacion-de-objetos.md)
