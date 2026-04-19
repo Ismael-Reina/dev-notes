@@ -10,12 +10,12 @@ La **persistencia** es la acción de guardar el estado de esos datos en un medio
 ## 2. Evolución del Almacenamiento de Datos
 
 ### A. Ficheros Planos (Archivos de Texto/Binarios)
-Es la forma más básica de persistencia (la que se suele aprender al iniciarse en la programación).
+Es la forma más básica de persistencia.
 * **Ventajas:** Muy fáciles de implementar para datos simples (ej: guardar configuraciones o logs).
 * **Desventajas:** Pésimos para buscar información concreta. Si tienes un archivo con 10.000 clientes y quieres buscar uno, tienes que leer el archivo entero secuencialmente. Además, no manejan bien la concurrencia (dos usuarios intentando escribir a la vez).
 
 ### B. Bases de Datos Relacionales (SQL)
-Sistemas como MySQL, PostgreSQL o Oracle. Organizan la información en **tablas** con filas y columnas, estableciendo relaciones matemáticas entre ellas.
+Sistemas como MySQL, PostgreSQL u Oracle. Organizan la información en **tablas** con filas y columnas, estableciendo relaciones matemáticas entre ellas.
 * **Ventajas:** Búsquedas ultra rápidas (índices), evitan datos duplicados y garantizan la integridad de las transacciones (ACID).
 * **Desventajas:** Estructura rígida. Si quieres cambiar el formato de un dato, tienes que alterar la estructura de la tabla entera.
 
@@ -26,8 +26,6 @@ Sistemas como MongoDB o Firebase. No usan tablas, sino "documentos" (parecidos a
 ---
 
 ## 3. El Desfase Objeto-Relacional (Impedance Mismatch)
-Aquí radica uno de los mayores retos del desarrollo de software a nivel empresarial.
-
 En Java, programamos usando el **Paradigma Orientado a Objetos** (Clases, Herencia, Polimorfismo, Listas). Sin embargo, el 90% de las bases de datos del mundo son **Relacionales** (Tablas, Filas, Columnas, Claves Foráneas).
 
 Estos dos mundos **no hablan el mismo idioma**. Guardar un objeto `Cliente` (que tiene una lista de objetos `Factura` por dentro) en una base de datos de tablas requiere desmontar el objeto en piezas y repartirlo en varias tablas. 
