@@ -22,6 +22,14 @@ Para que Java pueda hablar con una base de datos, necesita el archivo `.jar` del
 
 Antiguamente era necesario registrar el driver manualmente con `Class.forName()`, pero desde JDBC 4.0 (Java 6), los drivers se cargan automáticamente si están en el *classpath*.
 
+### 3.1 Tipos de Drivers JDBC
+Históricamente han existido cuatro formas de implementar un conector, aunque hoy en día casi solo se usa una:
+
+* **Tipo 1: Puente JDBC-ODBC:** Utiliza una capa intermedia (ODBC) de Windows. **Obsoleto** (eliminado en Java 8).
+* **Tipo 2: API Nativa:** Traduce las llamadas de Java a llamadas de la biblioteca cliente de la BD (C/C++). Requiere instalar software en el cliente.
+* **Tipo 3: Protocolo de Red:** Envía las peticiones a un servidor intermedio (middleware) que las traduce a la BD.
+* **Tipo 4: Protocolo Nativo (Pure Java):** Es el estándar actual. El driver está escrito 100% en Java y se comunica directamente con el servidor de la BD. Es rápido, portable y no requiere instalar nada más.
+
 ---
 
 ## 4. Estableciendo la Conexión
@@ -74,7 +82,7 @@ La URL de conexión es la "dirección postal" que usa el `DriverManager` para sa
 
 ## 6. Recursos para Profundizar
 * [📖 JDBC Overview (Oracle Docs)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) - Introducción técnica a la arquitectura JDBC.
-* [📖 Introduction to JDBC (Baeldung)](https://www.baeldung.com/java-jdbc) - Guía práctica para configurar conexiones y drivers.
+* [📖 Introduction to JDBC (Baeldung)](https://www.geeksforgeeks.org/java/introduction-to-jdbc/) - Guía práctica para configurar conexiones y drivers.
 * [📖 MySQL Connector/J Documentation](https://dev.mysql.com/doc/connector-j/en/) - Documentación oficial para conectar Java con MySQL.
 
 ---
