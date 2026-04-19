@@ -1,0 +1,9 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos personales de seguimiento y borradores
+TODO.md
+ESTADO.md
+borrador.txt
+*.docx
