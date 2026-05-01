@@ -100,4 +100,4 @@ user.setNombre("Ismael Olvidado"); // Este cambio NO se guarda en la base de dat
 * [📖 Baeldung: Hibernate Lifecycle](https://www.baeldung.com/hibernate-entity-lifecycle) - Ejemplos prácticos de cada estado y los métodos que provocan las transiciones.
 
 ---
-[◀ Volver: Anotaciones JPA](./13-hibernate-anotaciones-jpa.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Lenguaje de Consultas (HQL) ▶](./15-hibernate-hql-y-consultas.md)
+[◀ Volver: Configuración y Mapeo Clásico](./12-hibernate-configuracion-y-mapeo-clasico.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Anotaciones JPA ▶](./14-hibernate-anotaciones-jpa.md)

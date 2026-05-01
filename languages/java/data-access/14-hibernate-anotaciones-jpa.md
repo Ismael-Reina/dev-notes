@@ -92,4 +92,4 @@ public class User {
 * [📖 Hibernate User Guide: Annotations](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#entity) - El manual oficial sobre mapeo moderno.
 
 ---
-[◀ Volver: Configuración y Mapeo Clásico](./12-hibernate-configuracion-y-mapeo-clasico.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Clases Persistentes y Estados ▶](./14-hibernate-clases-persistentes-y-estados.md)
+[◀ Volver: Clases Persistentes y Estados](./13-hibernate-clases-persistentes-y-estados.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Operaciones CRUD ▶](./15-hibernate-operaciones-crud.md)
