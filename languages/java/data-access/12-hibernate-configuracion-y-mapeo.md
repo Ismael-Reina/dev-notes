@@ -1,17 +1,14 @@
-# Hibernate: Configuración y Ficheros de Mapeo
+# Hibernate: Configuración y Mapeo Clásico (XML)
 
-Para que Hibernate funcione, necesita dos tipos de información: cómo conectarse a la base de datos (Configuración) y cómo relacionar nuestras clases con las tablas (Mapeo).
+Para que Hibernate funcione, necesita saber dos cosas fundamentales: **dónde está la base de datos** (Configuración) y **cómo se relacionan nuestras clases con las tablas** (Mapeo). 
+
+En este capítulo veremos la configuración esencial y daremos un repaso rápido a la forma clásica de mapeo (basada en XML), que hoy en día se considera *Legacy* (obsoleta) pero que aún se enseña en entornos académicos.
 
 ---
 
 ## 1. El archivo de configuración (`hibernate.cfg.xml`)
-Este archivo es el "corazón" de Hibernate. Se coloca habitualmente en la raíz de la carpeta de recursos (`src/main/resources`). En él definimos:
-* **Propiedades de conexión:** Driver, URL, usuario y contraseña (similar a JDBC).
-* **Dialecto SQL:** Hibernate necesita saber qué "idioma" habla la base de datos (MySQL, Oracle, etc.) para generar el SQL correcto.
-* **Pool de conexiones:** Configuración interna o integración con HikariCP.
-* **Ficheros de mapeo:** La lista de archivos `.hbm.xml` que debe cargar.
+Este archivo es el "corazón" de Hibernate en aplicaciones Java SE. Suele colocarse en la raíz de la carpeta de recursos (`src/main/resources`). Aquí definimos las credenciales, el dialecto y registramos las entidades.
 
-### Ejemplo de `hibernate.cfg.xml`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
@@ -20,37 +17,47 @@ Este archivo es el "corazón" de Hibernate. Se coloca habitualmente en la raíz 
 
 <hibernate-configuration>
     <session-factory>
+        <!-- 1. Propiedades de conexión (JDBC) -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/mi_db</property>
         <property name="connection.username">root</property>
         <property name="connection.password">1234</property>
 
+        <!-- 2. Dialecto SQL (Crucial para que Hibernate traduzca correctamente) -->
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
-        <property name="show_sql">true</property> <property name="format_sql">true</property>
+        <!-- 3. Propiedades de desarrollo -->
+        <property name="show_sql">true</property> <!-- Muestra el SQL generado en consola -->
+        <property name="format_sql">true</property> <!-- Formatea el SQL para leerlo mejor -->
 
-        <mapping resource="com/entidades/Usuario.hbm.xml"/>
+        <!-- 4. Registro de Clases / Mapeos -->
+        <mapping class="com.quizmael.model.User"/> <!-- Forma moderna -->
+        <!-- <mapping resource="com/entidades/Usuario.hbm.xml"/> Forma clásica -->
     </session-factory>
 </hibernate-configuration>
 ```
 
 ---
 
-## 2. El Fichero de Mapeo (`.hbm.xml`)
-Es el archivo que explica a Hibernate qué atributo de nuestra clase Java corresponde a qué columna de la tabla SQL. Se suele crear uno por cada clase persistente.
+## 2. El Mapeo Clásico (`.hbm.xml`) - *LEGACY*
+⚠️ **Aviso:** *Esta es la forma antigua de trabajar. Ya no se utiliza en la industria moderna, pero es probable que te la exijan en temarios oficiales antiguos.*
 
-### Estructura básica:
-* `<class>`: Define la clase Java y la tabla asociada.
-* `<id>`: Define la clave primaria.
-* `<property>`: Define el resto de atributos.
+Antiguamente, para mantener las clases Java completamente "limpias" (sin dependencias de Hibernate), se creaba un archivo XML paralelo por cada clase. Este archivo actuaba como un diccionario.
 
-### Ejemplo de `Usuario.hbm.xml`
+### Estructura básica de un `.hbm.xml`:
+* `<class>`: Asocia la clase Java con el nombre de la tabla SQL.
+* `<id>`: Define qué atributo es la Clave Primaria (PK) y cómo se genera (`<generator>`).
+* `<property>`: Asocia un atributo normal con una columna de la base de datos.
+
 ```xml
 <hibernate-mapping package="com.entidades">
     <class name="Usuario" table="usuarios">
-        <id name="id" column="id_usuario">
-            <generator class="native"/> </id>
+        <!-- Clave Primaria -->
+        <id name="id" column="user_id">
+            <generator class="native"/> <!-- Delega el autoincremento a la BD -->
+        </id>
 
+        <!-- Atributos normales -->
         <property name="nombre" column="nombre_completo" type="string"/>
         <property name="email" unique="true" not-null="true"/>
     </class>
@@ -59,22 +66,16 @@ Es el archivo que explica a Hibernate qué atributo de nuestra clase Java corres
 
 ---
 
-## 3. Elementos clave del mapeo
-
-### A. Estrategias de generación de IDs (`<generator>`)
-* **native:** Elige la mejor opción según la BD (ej. `AUTO_INCREMENT` en MySQL).
-* **increment:** Hibernate busca el ID máximo y le suma 1 (útil si la BD no soporta autoincremento).
-* **assigned:** El programador debe asignar el ID manualmente antes de guardar.
-
-### B. Tipos de datos
-Hibernate tiene sus propios tipos (mapeadores) para asegurar la compatibilidad. Si no se especifica el atributo `type`, Hibernate intenta adivinarlo usando *Reflection*.
+## 3. La Transición al Mapeo Moderno
+Mantener decenas de archivos `.hbm.xml` sincronizados con el código Java era un infierno de mantenimiento. Por ello, la comunidad Java adoptó el uso de **Anotaciones JPA** directamente en el código Java. En el siguiente capítulo veremos este estándar, que es el que utilizarás en la vida real.
 
 ---
 
-## 4. Recursos para Profundizar
-* [📖 Hibernate Configuration (Official Docs)](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#bootstrap) - Guía completa de todas las propiedades configurables.
-* [📖 XML Mapping Reference](https://docs.jboss.org/hibernate/orm/3.5/reference/en/html/mapping.html) - Referencia detallada de las etiquetas HBM.
+## 4. Recursos Adicionales
+* [📖 Hibernate Configuration (Official Docs)](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#bootstrap) - Guía completa de propiedades del `hibernate.cfg.xml`.
+* [📖 Legacy XML Mapping](https://docs.jboss.org/hibernate/orm/3.5/reference/en/html/mapping.html) - Documentación antigua sobre las etiquetas HBM.
 * [📖 Hibernate Dialects List](https://docs.jboss.org/hibernate/orm/current/javadocs/org/hibernate/dialect/package-summary.html) - Lista de dialectos soportados.
 
 ---
-[◀ Volver: Conceptos de ORM](./11-orm-conceptos-y-herramientas.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Clases Persistentes y Estados del Objeto ▶](./13-hibernate-clases-persistentes-y-estados.md)
+[◀ Volver: Conceptos de ORM](./11-orm-conceptos-y-herramientas.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Anotaciones JPA ▶](./13-hibernate-anotaciones-jpa.md)
+
