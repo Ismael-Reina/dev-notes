@@ -100,4 +100,4 @@ session.getTransaction().commit(); // Se ejecuta el DELETE SQL
 * [📖 Hibernate Update vs Merge (Vlad Mihalcea)](https://vladmihalcea.com/jpa-persist-and-merge/) - Guía experta sobre cómo reconectar objetos *Detached*.
 
 ---
-[◀ Volver: Clases Persistentes y Estados](./13-hibernate-clases-persistentes-y-estados.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Lenguaje de Consultas (HQL) ▶](./15-hibernate-hql-y-consultas.md)
+[◀ Volver: Operaciones CRUD con Sesiones](./14-hibernate-operaciones-crud.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Relaciones, Colecciones y Transacciones ▶](./16-hibernate-relaciones-y-transacciones.md)

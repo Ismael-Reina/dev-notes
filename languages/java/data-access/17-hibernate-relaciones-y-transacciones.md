@@ -70,4 +70,4 @@ try {
 * [📖 Lazy Loading in Hibernate](https://www.baeldung.com/hibernate-lazy-eager-loading) - Comparativa de rendimiento entre carga perezosa e inmediata.
 
 ---
-[◀ Volver: HQL y Consultas](./15-hibernate-hql-y-consultas.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Introducción a BDOR (Unidad 4) ▶](./17-introduccion-bdor.md)
+[◀ Volver: Relaciones y Transacciones](./16-hibernate-relaciones-y-transacciones.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Tipos Estructurados y Referencias ▶](./18-tipos-estructurados-y-referencias.md)
