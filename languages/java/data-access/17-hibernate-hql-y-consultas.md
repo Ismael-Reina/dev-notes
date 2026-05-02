@@ -114,4 +114,4 @@ List<Usuario> usuariosAntiguos = query.list();
 * [📖 Baeldung: Hibernate Aggregate Functions](https://www.baeldung.com/hibernate-aggregate-functions) - Guía práctica sobre cómo usar `count()`, `sum()`, `avg()`, etc., en HQL.
 
 ---
-[◀ Volver: HQL y Consultas](./15-hibernate-hql-y-consultas.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Introducción a BDOR (Unidad 4) ▶](./17-introduccion-a-las-bdor-y-bdoo.md)
+[◀ Volver: Operaciones CRUD con Sesiones](./16-hibernate-operaciones-crud.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Introducción a BDOR (Unidad 4) ▶](./18-introduccion-a-las-bdor-y-bdoo.md)
