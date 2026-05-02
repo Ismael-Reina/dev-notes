@@ -1,4 +1,4 @@
-# Hibernate: Relaciones, Colecciones y Transacciones
+# Hibernate: Relaciones y Colecciones
 
 En el mundo real, los objetos no están aislados. Un `Departamento` tiene muchos `Empleados`, y un `Estudiante` se matricula en muchos `Cursos`. Hibernate gestiona estas asociaciones automáticamente, traduciendo la navegación entre objetos Java a Claves Foráneas (Foreign Keys) en SQL.
 
@@ -116,4 +116,4 @@ try {
 * [📖 Understanding Cascade Types (Vlad Mihalcea)](https://vladmihalcea.com/hibernate-cascade-types/) - Explicación avanzada sobre cómo la cascada afecta a la integridad de datos.
 
 ---
-[◀ Volver: Anotaciones JPA](./14-hibernate-anotaciones-jpa.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Operaciones CRUD ▶](./16-hibernate-operaciones-crud.md)
+[◀ Volver: Anotaciones JPA](./14-hibernate-anotaciones-jpa.md) | [🏠 Ir al Índice](./README.md) | [Siguiente: Operaciones CRUD y Transacciones ▶](./16-hibernate-operaciones-crud-y-transacciones.md)
